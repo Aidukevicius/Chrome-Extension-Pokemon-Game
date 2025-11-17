@@ -1,0 +1,384 @@
+ 🔧 Overall Goal
+
+> Build a **Pokémon-themed Chrome extension popup** using **React + Vite** that also runs as a normal **web page preview** in Replit.
+> The UI is a **square dashboard** showing a companion Pokémon, with side panels and bottom tabs.
+> It must be compatible with **Chrome Extension Manifest V3**.
+
+---
+
+## 1. Tech & Project Setup
+
+1. Use **React + Vite** (JavaScript, not TypeScript) as the base.
+
+2. The app should run:
+
+   * In dev mode via Vite (`npm run dev`) as a **web preview**.
+   * As a **Chrome extension popup** built from the same code (using `npm run build` and loading the `dist/` folder in Chrome as an unpacked extension).
+
+3. Project structure (top-level):
+
+* `index.html` (Vite entry for web preview)
+* `vite.config.js` (configured for extension build)
+* `manifest.json` (Chrome Manifest V3)
+* `src/`
+
+  * `main.jsx` (React entry)
+  * `App.jsx` (main UI “game shell”)
+  * `components/` (UI components)
+  * `hooks/` (e.g. storage hooks)
+  * `state/` (game state logic)
+  * `data/pokemon-gen1.json` (Gen 1 Pokémon data)
+* `public/`
+
+  * `assets/` where I will put **Pokémon GIFs** (e.g. `assets/bulbasaur.gif`)
+
+For now, you can create placeholder GIF filenames; I will upload real files later.
+
+---
+
+## 2. Extension vs Web Preview
+
+Set things up so:
+
+* **In web mode (Vite dev / static site):**
+
+  * App runs at `/` as a normal page.
+  * Uses `localStorage` for persistence.
+
+* **In extension mode (Chrome popup):**
+
+  * Same React bundle is used as the popup UI.
+  * `manifest.json` points `default_popup` to `index.html`.
+  * Uses `chrome.storage.sync` for persistence where possible.
+
+In code, implement a small storage helper that:
+
+* Detects if `chrome` and `chrome.storage` exist.
+* If yes → use `chrome.storage.sync`.
+* Else → fall back to `localStorage`.
+
+---
+
+## 3. UI / UX Spec (React Components)
+
+Build a main layout that looks like a **square Game Boy–style screen**.
+
+### 3.1 Main layout
+
+Create a top-level `<App />` that renders:
+
+* A **centered, square “game shell” container**, ~400–500px.
+* Inside, vertically:
+
+  1. **Top bar** (logo + companion status)
+  2. **Middle zone**:
+
+     * Left/center: companion Pokémon area.
+     * Right: vertical 3-dot panel selector and the currently active info panel.
+  3. **Bottom tab bar**: Pokédex, Items, Trade/Shop, Settings.
+
+Prefer a simple layout with CSS flexbox.
+
+### 3.2 Visual theme
+
+* Use a retro game font like `Press Start 2P` from Google Fonts for the logo/headings.
+* Soft rounded corners, pixel-like borders, subtle drop shadow.
+* **No glassmorphism**, keep it flat and nostalgic.
+
+#### Type-based gradient
+
+* The main **companion background** must be a gradient based on Pokémon type:
+
+  * Grass: green → white
+  * Fire: orange/red → white
+  * Water: blue → white
+  * Electric: yellow → white
+  * etc.
+* Implement a utility mapping type → base color, and generate a CSS linear gradient applied to a container behind the Pokémon GIF.
+
+### 3.3 Top bar
+
+Top bar should include:
+
+* **Left: logo**:
+
+  * Big label: `Pocket Pal`
+  * Smaller label: `Kanto`
+* **Right: status block** for the current companion:
+
+  * Line 1: `Name Lv. X`
+  * Line 2: `HP: [bar]`
+
+    * Simple HP bar: outer rectangle + inner filled bar based on `currentHP / maxHP`.
+
+### 3.4 Companion area
+
+* Large central card with:
+
+  * The **type gradient background**.
+  * A fixed-area image container for the Pokémon GIF:
+
+    * Use a `spriteKey` or `assetName` from data to map to e.g. `/assets/bulbasaur.gif`.
+  * Underneath:
+
+    * Three buttons: **Pet**, **Feed**, **Train**.
+
+      * Add hover & active states (scale slightly, small animation).
+    * Line showing **Mood**: e.g. `Mood: Happy`, `Mood: Sleepy` etc.
+
+### 3.5 Right-side dots & info panels
+
+On the right side of the main area:
+
+* Vertical stack of **3 small circular buttons** (the dots):
+
+  * Dot 1 → Stats panel
+  * Dot 2 → Evolutions panel
+  * Dot 3 → About panel
+* The active dot is visually highlighted.
+
+Below/next to the dots:
+
+* A **panel area** that changes content depending on the active dot:
+
+1. **Stats panel**:
+
+   * Show:
+
+     * Type(s)
+     * Nature
+     * Friendship
+     * XP and XP to next level
+   * You can add Attack/Defense-like flavor stats derived from base stats.
+
+2. **Evolutions panel**:
+
+   * Show the evolution line for the current Pokémon.
+
+     * Example for Bulbasaur: Bulbasaur → Ivysaur → Venusaur.
+   * For each stage, show:
+
+     * Name
+     * Minimum level or other requirement.
+   * If the companion meets evolution conditions, show a “Ready to evolve!” indicator (no full evolution feature needed yet, just a placeholder button or text).
+
+3. **About panel**:
+
+   * Show:
+
+     * Recommended/best natures (e.g. Modest, Timid).
+     * Short flavor description (can be a sentence or two from a data field).
+     * Maybe type strengths/weaknesses in a simple form.
+
+---
+
+## 4. Bottom Tabs (Pokédex / Items / Trade / Settings)
+
+At the bottom of the shell, show a tab bar with 4 tabs:
+
+1. **Pokédex**
+2. **Items**
+3. **Trade / Shop**
+4. **Settings**
+
+Each tab:
+
+* Has an icon (can be emoji or simple text placeholders).
+* Changes the bottom content area when clicked.
+
+You can implement tabs as a React state in `<App />` like `activeTab`, and conditionally render the tab content.
+
+### 4.1 Pokédex tab
+
+* Display a **scrollable list or grid** of all **Gen 1 Pokémon (#001–#151)**.
+* Each entry:
+
+  * ID, name, and small colored placeholder (or mini sprite).
+  * Show if the Pokémon is **seen** or **caught**.
+* When a Pokémon is clicked:
+
+  * Show a detail view in the same tab (could be a panel or modal) with:
+
+    * Types
+    * Evolution chain
+    * Recommended natures
+    * Button: **“Set as Companion”** (enabled only if caught or you can allow free switching for now).
+
+### 4.2 Items tab
+
+* Show the player’s inventory:
+
+  * Example items: Berries (for feeding), Potions, etc.
+* Each item:
+
+  * Name, quantity, short description.
+* The actual *usage* is wired to interactions:
+
+  * Feed uses berries.
+  * Potions would restore HP (you can stub or lightly implement this).
+
+### 4.3 Trade / Shop tab
+
+* For now, **do not implement real trading**.
+* Display a “Coming soon” style screen:
+
+  * Maybe a locked icon and short text.
+* This tab is just future-proofing.
+
+### 4.4 Settings tab
+
+Include:
+
+* **Sound toggle** (even if actual sounds are not yet implemented).
+* **Theme selector** (e.g. Classic, Night – minor color variations).
+* **Reset Game Data** button:
+
+  * Confirm dialog.
+  * Clears storage and resets to default starter (Bulbasaur, Lv 5, basic items, empty Pokédex except starter caught).
+
+---
+
+## 5. Game Data & State (React-friendly)
+
+Implement a small state system (can be simple React `useState`/`useReducer` or a custom hook).
+
+### 5.1 Pokémon data (`data/pokemon-gen1.json`)
+
+Create a JSON file with entries for all Gen 1 Pokémon, each containing at least:
+
+* `id` (1–151)
+* `name`
+* `types`: array of types (e.g. `["Grass", "Poison"]`)
+* `spriteKey` or `assetName`: (e.g. `"bulbasaur"`) used to map to `/assets/bulbasaur.gif`.
+* `evolvesTo` (id or name) and `minLevel` (if evolution exists).
+* `baseStats` (approximate HP, Attack etc., doesn’t need to be perfect).
+* `recommendedNatures`: array of strings.
+* `description`: short flavor text.
+
+### 5.2 Player state model
+
+Represent player state as something like:
+
+* `companionId`
+* `level`
+* `currentHP`, `maxHP`
+* `xp`, `xpToNextLevel`
+* `friendship` (0–100)
+* `hunger` / `energy`
+* `mood` (derived from other values)
+* `inventory`: map of item ID → quantity
+* `pokedex`: with `seen` and `caught` flags for each Pokémon ID
+* timestamps: `lastInteracted`, `lastFed`, etc.
+
+### 5.3 State logic
+
+* **Pet action**:
+
+  * Increase `friendship` slightly.
+  * Slight XP gain.
+  * Update `mood` to more positive.
+
+* **Feed action**:
+
+  * Consume 1 berry (or just act as if infinite berries for now).
+  * Restore HP and hunger.
+  * Mood becomes happier, unless overfed.
+
+* **Train action**:
+
+  * Increase XP.
+  * Decrease energy/hunger slightly.
+  * On XP threshold → level up.
+
+* **Level up logic**:
+
+  * When XP >= XP needed:
+
+    * Increment level.
+    * Increase `maxHP`.
+    * Adjust `currentHP` (e.g. heal a bit or equal to new max).
+    * Check evolution requirements:
+
+      * If conditions met, mark as “Ready to evolve” (just displayed in Evolutions panel).
+
+* **Passive decay on load**:
+
+  * On app load, compare current time to saved timestamps.
+  * Gradually reduce HP, friendship, or hunger based on elapsed time.
+  * Do not drop HP below a small minimum, to avoid a “dead” state; just make mood low.
+
+---
+
+## 6. Persistence Layer
+
+Create a helper (custom hook or module) that abstracts persistence:
+
+* Expose functions like `loadState()`, `saveState(partialState)`.
+
+Behavior:
+
+* If `chrome.storage` is available (extension):
+
+  * Use `chrome.storage.sync` for get/set.
+* Else:
+
+  * Use `localStorage` with a fixed key (e.g. `"pocket-pal-state"`).
+
+Make sure to:
+
+* Load state on app start.
+* If no saved state exists, initialize a default one:
+
+  * Starter = Bulbasaur with some initial stats and minimal inventory.
+
+---
+
+## 7. Manifest V3 & Vite Integration
+
+Create a **Manifest V3** file:
+
+* Basic fields:
+
+  * `"name"`: "Pocket Pal – Kanto Companion"
+  * `"description"`: "A Gen 1 Pokémon companion that follows you as a Chrome extension."
+  * `"version"`: "0.1.0"
+  * `"manifest_version"`: 3
+* `"action"`:
+
+  * `"default_popup"`: `"index.html"`
+  * `"default_title"`: `"Pocket Pal"`
+* `"permissions"`:
+
+  * `["storage"]`
+* `"host_permissions"`:
+
+  * `["<all_urls>"]` (for future “encounter while browsing” features).
+* Add space for future:
+
+  * `"background"` with service worker (e.g. `"background.js"`) – can be stubbed now.
+  * `"content_scripts"` entry not required yet, but the design should allow adding it later.
+
+Configure **Vite** so that:
+
+* It outputs a build suitable for the extension:
+
+  * `index.html` and built JS/CSS go under `dist/`.
+* `index.html` in `dist` is the popup page referenced by the manifest.
+* The same Vite build is used for both extension and normal web hosting.
+
+You don’t need complex multi-page setup yet; a single entry `index.html` is fine.
+
+---
+
+## 8. Polish & UX
+
+* Add small animations to buttons (e.g. scale up on hover/press).
+* Ensure the layout works nicely at around 380–420px width (popup size).
+* Make sure text is readable and not too cramped, especially for the pixel font.
+* Provide basic empty states:
+
+  * Pokédex entries that are unseen show “???” or grayed-out.
+  * Inventory empty → show a short message.
+  * Trade/Shop → clearly “Coming soon”.
+
+> End of spec.
