@@ -107,28 +107,28 @@ export default function RightPanel({
               </div>
               <div className="grid grid-cols-2 gap-2 mt-2">
                 <div>
-                  <div className="text-muted-foreground text-[8px]">HP</div>
-                  <div className="text-[10px] font-semibold">{companionPokemon.baseStats.hp}</div>
+                  <div className="text-muted-foreground text-[9px] font-bold">HP</div>
+                  <div className="text-[11px] font-semibold">{companionPokemon.baseStats.hp}</div>
                 </div>
                 <div>
-                  <div className="text-muted-foreground text-[8px]">Attack</div>
-                  <div className="text-[10px] font-semibold">{companionPokemon.baseStats.attack}</div>
+                  <div className="text-muted-foreground text-[9px] font-bold">Attack</div>
+                  <div className="text-[11px] font-semibold">{companionPokemon.baseStats.attack}</div>
                 </div>
                 <div>
-                  <div className="text-muted-foreground text-[8px]">Defense</div>
-                  <div className="text-[10px] font-semibold">{companionPokemon.baseStats.defense}</div>
+                  <div className="text-muted-foreground text-[9px] font-bold">Defense</div>
+                  <div className="text-[11px] font-semibold">{companionPokemon.baseStats.defense}</div>
                 </div>
                 <div>
-                  <div className="text-muted-foreground text-[8px]">Sp. Atk</div>
-                  <div className="text-[10px] font-semibold">{companionPokemon.baseStats.spAttack}</div>
+                  <div className="text-muted-foreground text-[9px] font-bold">Sp. Atk</div>
+                  <div className="text-[11px] font-semibold">{companionPokemon.baseStats.spAttack}</div>
                 </div>
                 <div>
-                  <div className="text-muted-foreground text-[8px]">Sp. Def</div>
-                  <div className="text-[10px] font-semibold">{companionPokemon.baseStats.spDefense}</div>
+                  <div className="text-muted-foreground text-[9px] font-bold">Sp. Def</div>
+                  <div className="text-[11px] font-semibold">{companionPokemon.baseStats.spDefense}</div>
                 </div>
                 <div>
-                  <div className="text-muted-foreground text-[8px]">Speed</div>
-                  <div className="text-[10px] font-semibold">{companionPokemon.baseStats.speed}</div>
+                  <div className="text-muted-foreground text-[9px] font-bold">Speed</div>
+                  <div className="text-[11px] font-semibold">{companionPokemon.baseStats.speed}</div>
                 </div>
               </div>
             </div>
