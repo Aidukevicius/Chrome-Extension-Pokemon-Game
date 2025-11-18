@@ -28,7 +28,7 @@ export default function RightPanel({
   return (
     <div className="space-y-3">
       {/* 3-Dot Selector */}
-      <div 
+      <div
         className="flex flex-col gap-2 rounded border-2 p-2"
         style={{
           background: `linear-gradient(135deg, ${typeColor.from}15 0%, ${typeColor.to}15 100%)`,
@@ -89,9 +89,9 @@ export default function RightPanel({
       </div>
 
       {/* Panel Content */}
-      <div 
-        className="rounded border-2 p-3 text-xs space-y-2" 
-        style={{ 
+      <div
+        className="rounded border-2 p-3 text-xs space-y-2"
+        style={{
           minHeight: "200px",
           background: `linear-gradient(135deg, ${typeColor.from}15 0%, ${typeColor.to}15 100%)`,
           borderColor: typeColor.from
