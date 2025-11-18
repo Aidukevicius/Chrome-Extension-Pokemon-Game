@@ -22,8 +22,12 @@ export function useStorage<T>(key: string, defaultValue: T) {
         } else {
           // Use localStorage
           const stored = localStorage.getItem(key);
-          if (stored) {
-            setValue(JSON.parse(stored));
+          if (stored && stored !== "undefined") {
+            try {
+              setValue(JSON.parse(stored));
+            } catch (e) {
+              console.error("Failed to parse stored value:", e);
+            }
           }
           setIsLoading(false);
         }
