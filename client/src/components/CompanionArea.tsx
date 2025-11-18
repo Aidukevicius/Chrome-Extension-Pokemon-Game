@@ -58,6 +58,45 @@ export default function CompanionArea({
         </div>
       </div>
 
+      {/* Level Tracker */}
+      <div
+        className="rounded border-2 p-2"
+        style={{
+          background: `linear-gradient(135deg, ${typeColor.from}15 0%, ${typeColor.to}15 100%)`,
+          borderColor: typeColor.from
+        }}
+      >
+        <div className="text-muted-foreground text-[10px] mb-1">Level</div>
+        <div className="text-sm font-bold" data-testid="text-companion-level">Lv. {companion.level}</div>
+        <div className="h-2 bg-secondary rounded-full overflow-hidden mt-1">
+          <div
+            className="h-full bg-chart-3 transition-all"
+            style={{ width: `${(companion.xp / companion.xpToNextLevel) * 100}%` }}
+            data-testid="xp-bar"
+          />
+        </div>
+        <div className="text-[8px] text-right mt-0.5">{companion.xp}/{companion.xpToNextLevel} XP</div>
+      </div>
+
+      {/* Happiness Tracker */}
+      <div
+        className="rounded border-2 p-2"
+        style={{
+          background: `linear-gradient(135deg, ${typeColor.from}15 0%, ${typeColor.to}15 100%)`,
+          borderColor: typeColor.from
+        }}
+      >
+        <div className="text-muted-foreground text-[10px] mb-1">Happiness</div>
+        <div className="h-2 bg-secondary rounded-full overflow-hidden">
+          <div
+            className="h-full bg-primary transition-all"
+            style={{ width: `${companion.friendship}%` }}
+            data-testid="friendship-bar"
+          />
+        </div>
+        <div className="text-[8px] text-right mt-0.5">{companion.friendship}/100</div>
+      </div>
+
       {/* Mood Indicator */}
       <div
         className="text-center rounded border-2 p-2"
