@@ -50,7 +50,7 @@ export default function RightPanel({
             data-testid="button-panel-stats"
             aria-label="Stats panel"
           />
-          <img src={expShareIcon} alt="Stats" className="w-5 h-5 pixelated" />
+          <span className="font-pixel text-[10px]">Stats</span>
         </div>
         <div className="flex items-center gap-2">
           <button
@@ -67,7 +67,7 @@ export default function RightPanel({
             data-testid="button-panel-evolutions"
             aria-label="Evolutions panel"
           />
-          <img src={fireStoneIcon} alt="Evolution" className="w-5 h-5 pixelated" />
+          <span className="font-pixel text-[10px]">Evolutions</span>
         </div>
         <div className="flex items-center gap-2">
           <button
@@ -84,7 +84,7 @@ export default function RightPanel({
             data-testid="button-panel-about"
             aria-label="About panel"
           />
-          <img src={pokedexIcon} alt="About" className="w-5 h-5 pixelated" />
+          <span className="font-pixel text-[10px]">About</span>
         </div>
       </div>
 
