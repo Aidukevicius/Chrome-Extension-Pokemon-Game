@@ -73,9 +73,9 @@ export default function GameShell() {
         data-testid="game-shell"
       >
         {/* Main Content Area */}
-        <div className="flex gap-2 p-4 bg-background items-stretch">
+        <div className="flex gap-2 p-4 bg-background">
           {/* Companion Area (Left) */}
-          <div className="flex-1 flex">
+          <div className="flex-1">
             <CompanionArea
               companion={gameState.companion}
               companionPokemon={companionPokemon}
@@ -83,7 +83,7 @@ export default function GameShell() {
           </div>
 
           {/* Right Panel */}
-          <div className="w-32 flex">
+          <div className="w-32">
             <RightPanel
               activePanel={activePanel}
               setActivePanel={setActivePanel}
