@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useGameState } from "@/hooks/useGameState";
 import pokemonData from "../data/pokemon-gen1.json";
-import TopBar from "./TopBar";
 import CompanionArea from "./CompanionArea";
 import RightPanel from "./RightPanel";
 import BottomTabs from "./BottomTabs";
@@ -73,9 +72,6 @@ export default function GameShell() {
         className="w-full max-w-[420px] bg-card border-4 border-border rounded-lg shadow-2xl overflow-hidden"
         data-testid="game-shell"
       >
-        {/* Top Bar */}
-        <TopBar companion={gameState.companion} companionPokemon={companionPokemon} />
-
         {/* Main Content Area */}
         <div className="flex gap-2 p-4 bg-background">
           {/* Companion Area (Left) */}
