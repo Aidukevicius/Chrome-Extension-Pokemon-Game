@@ -1,5 +1,6 @@
 import type { CompanionState, Pokemon } from "@shared/schema";
 import { TYPE_COLORS } from "@shared/schema";
+import unknownSprite from "pokesprite-images/pokemon-gen7x/unknown.png";
 
 interface CompanionAreaProps {
   companion: CompanionState;
@@ -14,18 +15,12 @@ export default function CompanionArea({
   const primaryType = companionPokemon.types[0];
   const typeColor = TYPE_COLORS[primaryType] || TYPE_COLORS.Normal;
 
-  // Function to generate the image URL for the Pokémon sprite
-  const getPokemonImageUrl = (pokemonId: number) => {
-    // Use official sprites with numeric IDs for better availability
-    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonId}.png`;
-  };
-
-  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
-    e.currentTarget.style.display = 'none';
-    const fallback = e.currentTarget.nextElementSibling as HTMLElement;
-    if (fallback) {
-      fallback.style.display = 'flex';
-    }
+  // Get Pokemon sprite URL from PokeAPI (cached CDN, reliable)
+  const externalSpriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${companionPokemon.id}.png`;
+  
+  // Handle sprite loading error by switching to local fallback
+  const handleSpriteError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    e.currentTarget.src = unknownSprite;
   };
 
   return (
@@ -42,18 +37,12 @@ export default function CompanionArea({
       >
         {/* Pokémon Sprite */}
         <img
-          src={getPokemonImageUrl(companionPokemon.id)}
+          src={externalSpriteUrl}
           alt={companionPokemon.name}
           className="w-32 h-32 object-contain mb-3 pixelated"
           data-testid="pokemon-sprite"
-          onError={handleImageError}
+          onError={handleSpriteError}
         />
-        <div 
-          className="w-32 h-32 mb-3 flex items-center justify-center font-pixel text-4xl"
-          style={{ display: 'none' }}
-        >
-          {companionPokemon.name.slice(0, 2).toUpperCase()}
-        </div>
 
         {/* Type Badge */}
         <div className="flex gap-1 mb-2">
