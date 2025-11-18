@@ -70,7 +70,7 @@ export default function CompanionArea({
           }}
         >
           <div className="flex items-center justify-between mb-1">
-            <span className="text-muted-foreground text-[8px]">Lv</span>
+            <span className="text-foreground font-bold text-[8px]">Lv</span>
             <span className="text-[9px] font-bold" data-testid="text-companion-level">{companion.level}</span>
           </div>
           <div className="h-1 bg-secondary rounded-full overflow-hidden">
@@ -91,7 +91,7 @@ export default function CompanionArea({
           }}
         >
           <div className="flex items-center justify-between mb-1">
-            <span className="text-muted-foreground text-[8px]">Happy</span>
+            <span className="text-foreground font-bold text-[8px]">Happy</span>
             <span className="text-[9px]">{companion.friendship}</span>
           </div>
           <div className="h-1 bg-secondary rounded-full overflow-hidden">

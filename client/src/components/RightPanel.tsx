@@ -92,7 +92,7 @@ export default function RightPanel({
       <div
         className="rounded border-2 p-3 text-xs space-y-2"
         style={{
-          height: "195px",
+          height: "155px",
           background: `linear-gradient(135deg, ${typeColor.from}15 0%, ${typeColor.to}15 100%)`,
           borderColor: typeColor.from
         }}
