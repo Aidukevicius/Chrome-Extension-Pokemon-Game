@@ -67,7 +67,7 @@ export default function RightPanel({
             data-testid="button-panel-evolutions"
             aria-label="Evolutions panel"
           />
-          <span className="font-pixel text-[10px]">Evolutions</span>
+          <span className="font-pixel text-[10px]">EVO</span>
         </div>
         <div className="flex items-center gap-2">
           <button
@@ -102,40 +102,34 @@ export default function RightPanel({
             <h3 className="font-pixel text-[10px] mb-3 text-foreground">Stats</h3>
             <div className="space-y-2">
               <div>
-                <div className="text-muted-foreground text-[10px] mb-1">Type</div>
-                <div className="flex flex-wrap gap-1">
-                  {companionPokemon.types.map(type => (
-                    <Badge key={type} variant="secondary" className="text-[8px] px-1 py-0">
-                      {type}
-                    </Badge>
-                  ))}
-                </div>
-              </div>
-              <div>
                 <div className="text-muted-foreground text-[10px]">Nature</div>
                 <div className="text-[10px] font-semibold" data-testid="text-nature">{companion.nature}</div>
               </div>
-              <div>
-                <div className="text-muted-foreground text-[10px] mb-1">Friendship</div>
-                <div className="h-2 bg-secondary rounded-full overflow-hidden">
-                  <div
-                    className="h-full bg-primary transition-all"
-                    style={{ width: `${companion.friendship}%` }}
-                    data-testid="friendship-bar"
-                  />
+              <div className="grid grid-cols-2 gap-2 mt-2">
+                <div>
+                  <div className="text-muted-foreground text-[8px]">HP</div>
+                  <div className="text-[10px] font-semibold">{companionPokemon.baseStats.hp}</div>
                 </div>
-                <div className="text-[8px] text-right mt-0.5">{companion.friendship}/100</div>
-              </div>
-              <div>
-                <div className="text-muted-foreground text-[10px] mb-1">XP</div>
-                <div className="h-2 bg-secondary rounded-full overflow-hidden">
-                  <div
-                    className="h-full bg-chart-3 transition-all"
-                    style={{ width: `${(companion.xp / companion.xpToNextLevel) * 100}%` }}
-                    data-testid="xp-bar"
-                  />
+                <div>
+                  <div className="text-muted-foreground text-[8px]">Attack</div>
+                  <div className="text-[10px] font-semibold">{companionPokemon.baseStats.attack}</div>
                 </div>
-                <div className="text-[8px] text-right mt-0.5">{companion.xp}/{companion.xpToNextLevel}</div>
+                <div>
+                  <div className="text-muted-foreground text-[8px]">Defense</div>
+                  <div className="text-[10px] font-semibold">{companionPokemon.baseStats.defense}</div>
+                </div>
+                <div>
+                  <div className="text-muted-foreground text-[8px]">Sp. Atk</div>
+                  <div className="text-[10px] font-semibold">{companionPokemon.baseStats.spAttack}</div>
+                </div>
+                <div>
+                  <div className="text-muted-foreground text-[8px]">Sp. Def</div>
+                  <div className="text-[10px] font-semibold">{companionPokemon.baseStats.spDefense}</div>
+                </div>
+                <div>
+                  <div className="text-muted-foreground text-[8px]">Speed</div>
+                  <div className="text-[10px] font-semibold">{companionPokemon.baseStats.speed}</div>
+                </div>
               </div>
             </div>
           </div>
