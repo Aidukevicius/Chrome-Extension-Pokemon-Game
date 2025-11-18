@@ -173,17 +173,17 @@ export default function RightPanel({
                 return (
                   <>
                     {chain.map((pokemon, idx) => (
-                      <div key={pokemon.id} className="text-[10px]">
+                      <div key={pokemon.id} className="text-[11px]">
                         <div className="flex items-center gap-1">
                           <div className={`w-2 h-2 rounded-full ${
                             pokemon.id === companionPokemon.id ? 'bg-primary' : 'bg-muted'
                           }`} />
-                          <span className={pokemon.id === companionPokemon.id ? 'font-bold' : ''}>
+                          <span className={pokemon.id === companionPokemon.id ? 'font-bold' : 'font-semibold'}>
                             {pokemon.name}
                           </span>
                         </div>
                         {pokemon.minLevel && (
-                          <div className="text-[8px] text-muted-foreground ml-3">
+                          <div className="text-[9px] text-muted-foreground ml-3 font-bold">
                             {pokemon.minLevel < 99 ? `Lv. ${pokemon.minLevel}` : "Special"}
                             {companion.level >= pokemon.minLevel && pokemon.id === companionPokemon.id && (
                               <Badge variant="default" className="ml-1 text-[6px] px-1 py-0">Ready!</Badge>
@@ -191,7 +191,7 @@ export default function RightPanel({
                           </div>
                         )}
                         {idx < chain.length - 1 && (
-                          <div className="text-[8px] text-muted-foreground ml-3">↓</div>
+                          <div className="text-[9px] text-muted-foreground ml-3 font-bold">↓</div>
                         )}
                       </div>
                     ))}
