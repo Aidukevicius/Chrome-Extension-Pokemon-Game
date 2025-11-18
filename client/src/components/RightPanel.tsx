@@ -92,7 +92,7 @@ export default function RightPanel({
       <div
         className="rounded border-2 p-3 text-xs space-y-2"
         style={{
-          minHeight: "200px",
+          minHeight: "240px",
           background: `linear-gradient(135deg, ${typeColor.from}15 0%, ${typeColor.to}15 100%)`,
           borderColor: typeColor.from
         }}
@@ -117,14 +117,6 @@ export default function RightPanel({
                 <div>
                   <div className="text-muted-foreground text-[8px]">Defense</div>
                   <div className="text-[10px] font-semibold">{companionPokemon.baseStats.defense}</div>
-                </div>
-                <div>
-                  <div className="text-muted-foreground text-[8px]">Sp. Atk</div>
-                  <div className="text-[10px] font-semibold">{companionPokemon.baseStats.spAttack}</div>
-                </div>
-                <div>
-                  <div className="text-muted-foreground text-[8px]">Sp. Def</div>
-                  <div className="text-[10px] font-semibold">{companionPokemon.baseStats.spDefense}</div>
                 </div>
                 <div>
                   <div className="text-muted-foreground text-[8px]">Speed</div>
@@ -231,10 +223,6 @@ export default function RightPanel({
                     </Badge>
                   ))}
                 </div>
-              </div>
-              <div>
-                <div className="text-muted-foreground text-[10px] mb-1">Description</div>
-                <p className="text-[9px] leading-relaxed">{companionPokemon.description}</p>
               </div>
             </div>
           </div>
