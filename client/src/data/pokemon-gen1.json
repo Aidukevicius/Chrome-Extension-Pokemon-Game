@@ -2,1500 +2,3396 @@
   {
     "id": 1,
     "name": "Bulbasaur",
-    "types": ["Grass", "Poison"],
+    "types": [
+      "Grass",
+      "Poison"
+    ],
     "spriteKey": "bulbasaur",
     "evolvesTo": 2,
     "minLevel": 16,
-    "baseStats": { "hp": 45, "attack": 49, "defense": 49, "speed": 45 },
-    "recommendedNatures": ["Modest", "Bold", "Calm"],
+    "baseStats": {
+      "hp": 45,
+      "attack": 49,
+      "defense": 49,
+      "spAttack": 65,
+      "spDefense": 65,
+      "speed": 45
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Bold",
+      "Calm"
+    ],
     "description": "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokémon."
   },
   {
     "id": 2,
     "name": "Ivysaur",
-    "types": ["Grass", "Poison"],
+    "types": [
+      "Grass",
+      "Poison"
+    ],
     "spriteKey": "ivysaur",
     "evolvesTo": 3,
     "minLevel": 32,
-    "baseStats": { "hp": 60, "attack": 62, "defense": 63, "speed": 60 },
-    "recommendedNatures": ["Modest", "Bold", "Calm"],
+    "baseStats": {
+      "hp": 60,
+      "attack": 62,
+      "defense": 63,
+      "spAttack": 80,
+      "spDefense": 80,
+      "speed": 60
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Bold",
+      "Calm"
+    ],
     "description": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs."
   },
   {
     "id": 3,
     "name": "Venusaur",
-    "types": ["Grass", "Poison"],
+    "types": [
+      "Grass",
+      "Poison"
+    ],
     "spriteKey": "venusaur",
-    "baseStats": { "hp": 80, "attack": 82, "defense": 83, "speed": 80 },
-    "recommendedNatures": ["Modest", "Bold", "Calm"],
+    "baseStats": {
+      "hp": 80,
+      "attack": 82,
+      "defense": 83,
+      "spAttack": 100,
+      "spDefense": 100,
+      "speed": 80
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Bold",
+      "Calm"
+    ],
     "description": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight."
   },
   {
     "id": 4,
     "name": "Charmander",
-    "types": ["Fire"],
+    "types": [
+      "Fire"
+    ],
     "spriteKey": "charmander",
     "evolvesTo": 5,
     "minLevel": 16,
-    "baseStats": { "hp": 39, "attack": 52, "defense": 43, "speed": 65 },
-    "recommendedNatures": ["Jolly", "Adamant", "Timid"],
+    "baseStats": {
+      "hp": 39,
+      "attack": 52,
+      "defense": 43,
+      "spAttack": 60,
+      "spDefense": 50,
+      "speed": 65
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant",
+      "Timid"
+    ],
     "description": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail."
   },
   {
     "id": 5,
     "name": "Charmeleon",
-    "types": ["Fire"],
+    "types": [
+      "Fire"
+    ],
     "spriteKey": "charmeleon",
     "evolvesTo": 6,
     "minLevel": 36,
-    "baseStats": { "hp": 58, "attack": 64, "defense": 58, "speed": 80 },
-    "recommendedNatures": ["Jolly", "Adamant", "Timid"],
+    "baseStats": {
+      "hp": 58,
+      "attack": 64,
+      "defense": 58,
+      "spAttack": 80,
+      "spDefense": 65,
+      "speed": 80
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant",
+      "Timid"
+    ],
     "description": "When it swings its burning tail, it elevates the temperature to unbearably high levels."
   },
   {
     "id": 6,
     "name": "Charizard",
-    "types": ["Fire", "Flying"],
+    "types": [
+      "Fire",
+      "Flying"
+    ],
     "spriteKey": "charizard",
-    "baseStats": { "hp": 78, "attack": 84, "defense": 78, "speed": 100 },
-    "recommendedNatures": ["Jolly", "Adamant", "Timid"],
+    "baseStats": {
+      "hp": 78,
+      "attack": 84,
+      "defense": 78,
+      "spAttack": 109,
+      "spDefense": 85,
+      "speed": 100
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant",
+      "Timid"
+    ],
     "description": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally."
   },
   {
     "id": 7,
     "name": "Squirtle",
-    "types": ["Water"],
+    "types": [
+      "Water"
+    ],
     "spriteKey": "squirtle",
     "evolvesTo": 8,
     "minLevel": 16,
-    "baseStats": { "hp": 44, "attack": 48, "defense": 65, "speed": 43 },
-    "recommendedNatures": ["Modest", "Bold", "Timid"],
+    "baseStats": {
+      "hp": 44,
+      "attack": 48,
+      "defense": 65,
+      "spAttack": 50,
+      "spDefense": 64,
+      "speed": 43
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Bold",
+      "Timid"
+    ],
     "description": "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth."
   },
   {
     "id": 8,
     "name": "Wartortle",
-    "types": ["Water"],
+    "types": [
+      "Water"
+    ],
     "spriteKey": "wartortle",
     "evolvesTo": 9,
     "minLevel": 36,
-    "baseStats": { "hp": 59, "attack": 63, "defense": 80, "speed": 58 },
-    "recommendedNatures": ["Modest", "Bold", "Timid"],
+    "baseStats": {
+      "hp": 59,
+      "attack": 63,
+      "defense": 80,
+      "spAttack": 65,
+      "spDefense": 80,
+      "speed": 58
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Bold",
+      "Timid"
+    ],
     "description": "Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance."
   },
   {
     "id": 9,
     "name": "Blastoise",
-    "types": ["Water"],
+    "types": [
+      "Water"
+    ],
     "spriteKey": "blastoise",
-    "baseStats": { "hp": 79, "attack": 83, "defense": 100, "speed": 78 },
-    "recommendedNatures": ["Modest", "Bold", "Timid"],
+    "baseStats": {
+      "hp": 79,
+      "attack": 83,
+      "defense": 100,
+      "spAttack": 85,
+      "spDefense": 105,
+      "speed": 78
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Bold",
+      "Timid"
+    ],
     "description": "A brutal Pokémon with pressurized water jets on its shell. They are used for high-speed tackles."
   },
   {
     "id": 10,
     "name": "Caterpie",
-    "types": ["Bug"],
+    "types": [
+      "Bug"
+    ],
     "spriteKey": "caterpie",
     "evolvesTo": 11,
     "minLevel": 7,
-    "baseStats": { "hp": 45, "attack": 30, "defense": 35, "speed": 45 },
-    "recommendedNatures": ["Jolly", "Timid"],
+    "baseStats": {
+      "hp": 45,
+      "attack": 30,
+      "defense": 35,
+      "spAttack": 20,
+      "spDefense": 20,
+      "speed": 45
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Timid"
+    ],
     "description": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls."
   },
   {
     "id": 11,
     "name": "Metapod",
-    "types": ["Bug"],
+    "types": [
+      "Bug"
+    ],
     "spriteKey": "metapod",
     "evolvesTo": 12,
     "minLevel": 10,
-    "baseStats": { "hp": 50, "attack": 20, "defense": 55, "speed": 30 },
-    "recommendedNatures": ["Jolly", "Timid"],
+    "baseStats": {
+      "hp": 50,
+      "attack": 20,
+      "defense": 55,
+      "spAttack": 25,
+      "spDefense": 25,
+      "speed": 30
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Timid"
+    ],
     "description": "This Pokémon is vulnerable to attack while its shell is soft, exposing its weak and tender body."
   },
   {
     "id": 12,
     "name": "Butterfree",
-    "types": ["Bug", "Flying"],
+    "types": [
+      "Bug",
+      "Flying"
+    ],
     "spriteKey": "butterfree",
-    "baseStats": { "hp": 60, "attack": 45, "defense": 50, "speed": 70 },
-    "recommendedNatures": ["Jolly", "Timid", "Modest"],
+    "baseStats": {
+      "hp": 60,
+      "attack": 45,
+      "defense": 50,
+      "spAttack": 90,
+      "spDefense": 80,
+      "speed": 70
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Timid",
+      "Modest"
+    ],
     "description": "In battle, it flaps its wings at high speed to release highly toxic dust into the air."
   },
   {
     "id": 13,
     "name": "Weedle",
-    "types": ["Bug", "Poison"],
+    "types": [
+      "Bug",
+      "Poison"
+    ],
     "spriteKey": "weedle",
     "evolvesTo": 14,
     "minLevel": 7,
-    "baseStats": { "hp": 40, "attack": 35, "defense": 30, "speed": 50 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 40,
+      "attack": 35,
+      "defense": 30,
+      "spAttack": 20,
+      "spDefense": 20,
+      "speed": 50
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "Often found in forests, eating leaves. It has a sharp venomous stinger on its head."
   },
   {
     "id": 14,
     "name": "Kakuna",
-    "types": ["Bug", "Poison"],
+    "types": [
+      "Bug",
+      "Poison"
+    ],
     "spriteKey": "kakuna",
     "evolvesTo": 15,
     "minLevel": 10,
-    "baseStats": { "hp": 45, "attack": 25, "defense": 50, "speed": 35 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 45,
+      "attack": 25,
+      "defense": 50,
+      "spAttack": 25,
+      "spDefense": 25,
+      "speed": 35
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "Almost incapable of moving, this Pokémon can only harden its shell to protect itself from predators."
   },
   {
     "id": 15,
     "name": "Beedrill",
-    "types": ["Bug", "Poison"],
+    "types": [
+      "Bug",
+      "Poison"
+    ],
     "spriteKey": "beedrill",
-    "baseStats": { "hp": 65, "attack": 90, "defense": 40, "speed": 75 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 40,
+      "spAttack": 45,
+      "spDefense": 80,
+      "speed": 75
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "Flies at high speed and attacks using its large venomous stingers on its forelegs and tail."
   },
   {
     "id": 16,
     "name": "Pidgey",
-    "types": ["Normal", "Flying"],
+    "types": [
+      "Normal",
+      "Flying"
+    ],
     "spriteKey": "pidgey",
     "evolvesTo": 17,
     "minLevel": 18,
-    "baseStats": { "hp": 40, "attack": 45, "defense": 40, "speed": 56 },
-    "recommendedNatures": ["Jolly", "Timid"],
+    "baseStats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 40,
+      "spAttack": 35,
+      "spDefense": 35,
+      "speed": 56
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Timid"
+    ],
     "description": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand."
   },
   {
     "id": 17,
     "name": "Pidgeotto",
-    "types": ["Normal", "Flying"],
+    "types": [
+      "Normal",
+      "Flying"
+    ],
     "spriteKey": "pidgeotto",
     "evolvesTo": 18,
     "minLevel": 36,
-    "baseStats": { "hp": 63, "attack": 60, "defense": 55, "speed": 71 },
-    "recommendedNatures": ["Jolly", "Timid"],
+    "baseStats": {
+      "hp": 63,
+      "attack": 60,
+      "defense": 55,
+      "spAttack": 50,
+      "spDefense": 50,
+      "speed": 71
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Timid"
+    ],
     "description": "Very protective of its sprawling territorial area, this Pokémon will fiercely peck at any intruder."
   },
   {
     "id": 18,
     "name": "Pidgeot",
-    "types": ["Normal", "Flying"],
+    "types": [
+      "Normal",
+      "Flying"
+    ],
     "spriteKey": "pidgeot",
-    "baseStats": { "hp": 83, "attack": 80, "defense": 75, "speed": 101 },
-    "recommendedNatures": ["Jolly", "Timid"],
+    "baseStats": {
+      "hp": 83,
+      "attack": 80,
+      "defense": 75,
+      "spAttack": 70,
+      "spDefense": 70,
+      "speed": 101
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Timid"
+    ],
     "description": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as Magikarp."
   },
   {
     "id": 19,
     "name": "Rattata",
-    "types": ["Normal"],
+    "types": [
+      "Normal"
+    ],
     "spriteKey": "rattata",
     "evolvesTo": 20,
     "minLevel": 20,
-    "baseStats": { "hp": 30, "attack": 56, "defense": 35, "speed": 72 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 30,
+      "attack": 56,
+      "defense": 35,
+      "spAttack": 25,
+      "spDefense": 35,
+      "speed": 72
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "Bites anything when it attacks. Small and very quick, it is a common sight in many places."
   },
   {
     "id": 20,
     "name": "Raticate",
-    "types": ["Normal"],
+    "types": [
+      "Normal"
+    ],
     "spriteKey": "raticate",
-    "baseStats": { "hp": 55, "attack": 81, "defense": 60, "speed": 97 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 55,
+      "attack": 81,
+      "defense": 60,
+      "spAttack": 50,
+      "spDefense": 70,
+      "speed": 97
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "It uses its whiskers to maintain its balance. It apparently slows down if they are cut off."
   },
   {
     "id": 21,
     "name": "Spearow",
-    "types": ["Normal", "Flying"],
+    "types": [
+      "Normal",
+      "Flying"
+    ],
     "spriteKey": "spearow",
     "evolvesTo": 22,
     "minLevel": 20,
-    "baseStats": { "hp": 40, "attack": 60, "defense": 30, "speed": 70 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 40,
+      "attack": 60,
+      "defense": 30,
+      "spAttack": 31,
+      "spDefense": 31,
+      "speed": 70
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "Eats bugs in grassy areas. It has to flap its short wings at high speed to stay airborne."
   },
   {
     "id": 22,
     "name": "Fearow",
-    "types": ["Normal", "Flying"],
+    "types": [
+      "Normal",
+      "Flying"
+    ],
     "spriteKey": "fearow",
-    "baseStats": { "hp": 65, "attack": 90, "defense": 65, "speed": 100 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 65,
+      "spAttack": 61,
+      "spDefense": 61,
+      "speed": 100
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "With its huge and magnificent wings, it can keep aloft without ever having to land for rest."
   },
   {
     "id": 23,
     "name": "Ekans",
-    "types": ["Poison"],
+    "types": [
+      "Poison"
+    ],
     "spriteKey": "ekans",
     "evolvesTo": 24,
     "minLevel": 22,
-    "baseStats": { "hp": 35, "attack": 60, "defense": 44, "speed": 55 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 35,
+      "attack": 60,
+      "defense": 44,
+      "spAttack": 40,
+      "spDefense": 54,
+      "speed": 55
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "Moves silently and stealthily. Eats the eggs of birds, such as Pidgey and Spearow, whole."
   },
   {
     "id": 24,
     "name": "Arbok",
-    "types": ["Poison"],
+    "types": [
+      "Poison"
+    ],
     "spriteKey": "arbok",
-    "baseStats": { "hp": 60, "attack": 85, "defense": 69, "speed": 80 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 60,
+      "attack": 85,
+      "defense": 69,
+      "spAttack": 65,
+      "spDefense": 79,
+      "speed": 80
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "It is rumored that the ferocious warning markings on its belly differ from area to area."
   },
   {
     "id": 25,
     "name": "Pikachu",
-    "types": ["Electric"],
+    "types": [
+      "Electric"
+    ],
     "spriteKey": "pikachu",
     "evolvesTo": 26,
     "minLevel": 99,
-    "baseStats": { "hp": 35, "attack": 55, "defense": 40, "speed": 90 },
-    "recommendedNatures": ["Timid", "Jolly", "Hasty"],
+    "baseStats": {
+      "hp": 35,
+      "attack": 55,
+      "defense": 40,
+      "spAttack": 50,
+      "spDefense": 50,
+      "speed": 90
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Jolly",
+      "Hasty"
+    ],
     "description": "When several of these Pokémon gather, their electricity could build and cause lightning storms."
   },
   {
     "id": 26,
     "name": "Raichu",
-    "types": ["Electric"],
+    "types": [
+      "Electric"
+    ],
     "spriteKey": "raichu",
-    "baseStats": { "hp": 60, "attack": 90, "defense": 55, "speed": 110 },
-    "recommendedNatures": ["Timid", "Jolly", "Hasty"],
+    "baseStats": {
+      "hp": 60,
+      "attack": 90,
+      "defense": 55,
+      "spAttack": 90,
+      "spDefense": 80,
+      "speed": 110
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Jolly",
+      "Hasty"
+    ],
     "description": "Its long tail serves as a ground to protect itself from its own high-voltage power."
   },
   {
     "id": 27,
     "name": "Sandshrew",
-    "types": ["Ground"],
+    "types": [
+      "Ground"
+    ],
     "spriteKey": "sandshrew",
     "evolvesTo": 28,
     "minLevel": 22,
-    "baseStats": { "hp": 50, "attack": 75, "defense": 85, "speed": 40 },
-    "recommendedNatures": ["Adamant", "Impish"],
+    "baseStats": {
+      "hp": 50,
+      "attack": 75,
+      "defense": 85,
+      "spAttack": 20,
+      "spDefense": 30,
+      "speed": 40
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Impish"
+    ],
     "description": "Burrows deep underground in arid locations far from water. It only emerges to hunt for food."
   },
   {
     "id": 28,
     "name": "Sandslash",
-    "types": ["Ground"],
+    "types": [
+      "Ground"
+    ],
     "spriteKey": "sandslash",
-    "baseStats": { "hp": 75, "attack": 100, "defense": 110, "speed": 65 },
-    "recommendedNatures": ["Adamant", "Impish"],
+    "baseStats": {
+      "hp": 75,
+      "attack": 100,
+      "defense": 110,
+      "spAttack": 45,
+      "spDefense": 55,
+      "speed": 65
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Impish"
+    ],
     "description": "Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape."
   },
   {
     "id": 29,
     "name": "Nidoran♀",
-    "types": ["Poison"],
+    "types": [
+      "Poison"
+    ],
     "spriteKey": "nidoran-f",
     "evolvesTo": 30,
     "minLevel": 16,
-    "baseStats": { "hp": 55, "attack": 47, "defense": 52, "speed": 41 },
-    "recommendedNatures": ["Modest", "Bold"],
+    "baseStats": {
+      "hp": 55,
+      "attack": 47,
+      "defense": 52,
+      "spAttack": 40,
+      "spDefense": 40,
+      "speed": 41
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Bold"
+    ],
     "description": "Although small, its venomous barbs render this Pokémon dangerous. The female has smaller horns."
   },
   {
     "id": 30,
     "name": "Nidorina",
-    "types": ["Poison"],
+    "types": [
+      "Poison"
+    ],
     "spriteKey": "nidorina",
     "evolvesTo": 31,
     "minLevel": 99,
-    "baseStats": { "hp": 70, "attack": 62, "defense": 67, "speed": 56 },
-    "recommendedNatures": ["Modest", "Bold"],
+    "baseStats": {
+      "hp": 70,
+      "attack": 62,
+      "defense": 67,
+      "spAttack": 55,
+      "spDefense": 55,
+      "speed": 56
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Bold"
+    ],
     "description": "The female's horn develops slowly. Prefers physical attacks such as clawing and biting."
   },
   {
     "id": 31,
     "name": "Nidoqueen",
-    "types": ["Poison", "Ground"],
+    "types": [
+      "Poison",
+      "Ground"
+    ],
     "spriteKey": "nidoqueen",
-    "baseStats": { "hp": 90, "attack": 92, "defense": 87, "speed": 76 },
-    "recommendedNatures": ["Adamant", "Bold"],
+    "baseStats": {
+      "hp": 90,
+      "attack": 92,
+      "defense": 87,
+      "spAttack": 75,
+      "spDefense": 85,
+      "speed": 76
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Bold"
+    ],
     "description": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves."
   },
   {
     "id": 32,
     "name": "Nidoran♂",
-    "types": ["Poison"],
+    "types": [
+      "Poison"
+    ],
     "spriteKey": "nidoran-m",
     "evolvesTo": 33,
     "minLevel": 16,
-    "baseStats": { "hp": 46, "attack": 57, "defense": 40, "speed": 50 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 46,
+      "attack": 57,
+      "defense": 40,
+      "spAttack": 40,
+      "spDefense": 40,
+      "speed": 50
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "Stiffens its ears to sense danger. The larger its horns, the more powerful its secreted venom."
   },
   {
     "id": 33,
     "name": "Nidorino",
-    "types": ["Poison"],
+    "types": [
+      "Poison"
+    ],
     "spriteKey": "nidorino",
     "evolvesTo": 34,
     "minLevel": 99,
-    "baseStats": { "hp": 61, "attack": 72, "defense": 57, "speed": 65 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 61,
+      "attack": 72,
+      "defense": 57,
+      "spAttack": 55,
+      "spDefense": 55,
+      "speed": 65
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "An aggressive Pokémon that is quick to attack. The horn on its head secretes a powerful venom."
   },
   {
     "id": 34,
     "name": "Nidoking",
-    "types": ["Poison", "Ground"],
+    "types": [
+      "Poison",
+      "Ground"
+    ],
     "spriteKey": "nidoking",
-    "baseStats": { "hp": 81, "attack": 102, "defense": 77, "speed": 85 },
-    "recommendedNatures": ["Jolly", "Adamant", "Modest"],
+    "baseStats": {
+      "hp": 81,
+      "attack": 102,
+      "defense": 77,
+      "spAttack": 85,
+      "spDefense": 75,
+      "speed": 85
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant",
+      "Modest"
+    ],
     "description": "It uses its powerful tail in battle to smash, constrict, then break the prey's bones."
   },
   {
     "id": 35,
     "name": "Clefairy",
-    "types": ["Fairy"],
+    "types": [
+      "Fairy"
+    ],
     "spriteKey": "clefairy",
     "evolvesTo": 36,
     "minLevel": 99,
-    "baseStats": { "hp": 70, "attack": 45, "defense": 48, "speed": 35 },
-    "recommendedNatures": ["Bold", "Calm", "Modest"],
+    "baseStats": {
+      "hp": 70,
+      "attack": 45,
+      "defense": 48,
+      "spAttack": 60,
+      "spDefense": 65,
+      "speed": 35
+    },
+    "recommendedNatures": [
+      "Bold",
+      "Calm",
+      "Modest"
+    ],
     "description": "Its magical and cute appeal has many admirers. It is rare and found only in certain areas."
   },
   {
     "id": 36,
     "name": "Clefable",
-    "types": ["Fairy"],
+    "types": [
+      "Fairy"
+    ],
     "spriteKey": "clefable",
-    "baseStats": { "hp": 95, "attack": 70, "defense": 73, "speed": 60 },
-    "recommendedNatures": ["Bold", "Calm", "Modest"],
+    "baseStats": {
+      "hp": 95,
+      "attack": 70,
+      "defense": 73,
+      "spAttack": 95,
+      "spDefense": 90,
+      "speed": 60
+    },
+    "recommendedNatures": [
+      "Bold",
+      "Calm",
+      "Modest"
+    ],
     "description": "A timid fairy Pokémon that is rarely seen. It will run and hide the moment it senses people."
   },
   {
     "id": 37,
     "name": "Vulpix",
-    "types": ["Fire"],
+    "types": [
+      "Fire"
+    ],
     "spriteKey": "vulpix",
     "evolvesTo": 38,
     "minLevel": 99,
-    "baseStats": { "hp": 38, "attack": 41, "defense": 40, "speed": 65 },
-    "recommendedNatures": ["Timid", "Modest"],
+    "baseStats": {
+      "hp": 38,
+      "attack": 41,
+      "defense": 40,
+      "spAttack": 50,
+      "spDefense": 65,
+      "speed": 65
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Modest"
+    ],
     "description": "At the time of birth, it has just one tail. The tail splits from its tip as it grows older."
   },
   {
     "id": 38,
     "name": "Ninetales",
-    "types": ["Fire"],
+    "types": [
+      "Fire"
+    ],
     "spriteKey": "ninetales",
-    "baseStats": { "hp": 73, "attack": 76, "defense": 75, "speed": 100 },
-    "recommendedNatures": ["Timid", "Modest"],
+    "baseStats": {
+      "hp": 73,
+      "attack": 76,
+      "defense": 75,
+      "spAttack": 81,
+      "spDefense": 100,
+      "speed": 100
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Modest"
+    ],
     "description": "Very smart and very vengeful. Grabbing one of its many tails could result in a 1000-year curse."
   },
   {
     "id": 39,
     "name": "Jigglypuff",
-    "types": ["Normal", "Fairy"],
+    "types": [
+      "Normal",
+      "Fairy"
+    ],
     "spriteKey": "jigglypuff",
     "evolvesTo": 40,
     "minLevel": 99,
-    "baseStats": { "hp": 115, "attack": 45, "defense": 20, "speed": 20 },
-    "recommendedNatures": ["Bold", "Calm"],
+    "baseStats": {
+      "hp": 115,
+      "attack": 45,
+      "defense": 20,
+      "spAttack": 45,
+      "spDefense": 25,
+      "speed": 20
+    },
+    "recommendedNatures": [
+      "Bold",
+      "Calm"
+    ],
     "description": "When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep."
   },
   {
     "id": 40,
     "name": "Wigglytuff",
-    "types": ["Normal", "Fairy"],
+    "types": [
+      "Normal",
+      "Fairy"
+    ],
     "spriteKey": "wigglytuff",
-    "baseStats": { "hp": 140, "attack": 70, "defense": 45, "speed": 45 },
-    "recommendedNatures": ["Bold", "Calm"],
+    "baseStats": {
+      "hp": 140,
+      "attack": 70,
+      "defense": 45,
+      "spAttack": 85,
+      "spDefense": 50,
+      "speed": 45
+    },
+    "recommendedNatures": [
+      "Bold",
+      "Calm"
+    ],
     "description": "The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size."
   },
   {
     "id": 41,
     "name": "Zubat",
-    "types": ["Poison", "Flying"],
+    "types": [
+      "Poison",
+      "Flying"
+    ],
     "spriteKey": "zubat",
     "evolvesTo": 42,
     "minLevel": 22,
-    "baseStats": { "hp": 40, "attack": 45, "defense": 35, "speed": 55 },
-    "recommendedNatures": ["Jolly", "Timid"],
+    "baseStats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 35,
+      "spAttack": 30,
+      "spDefense": 40,
+      "speed": 55
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Timid"
+    ],
     "description": "Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets."
   },
   {
     "id": 42,
     "name": "Golbat",
-    "types": ["Poison", "Flying"],
+    "types": [
+      "Poison",
+      "Flying"
+    ],
     "spriteKey": "golbat",
-    "baseStats": { "hp": 75, "attack": 80, "defense": 70, "speed": 90 },
-    "recommendedNatures": ["Jolly", "Timid"],
+    "baseStats": {
+      "hp": 75,
+      "attack": 80,
+      "defense": 70,
+      "spAttack": 65,
+      "spDefense": 75,
+      "speed": 90
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Timid"
+    ],
     "description": "Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly."
   },
   {
     "id": 43,
     "name": "Oddish",
-    "types": ["Grass", "Poison"],
+    "types": [
+      "Grass",
+      "Poison"
+    ],
     "spriteKey": "oddish",
     "evolvesTo": 44,
     "minLevel": 21,
-    "baseStats": { "hp": 45, "attack": 50, "defense": 55, "speed": 30 },
-    "recommendedNatures": ["Modest", "Bold"],
+    "baseStats": {
+      "hp": 45,
+      "attack": 50,
+      "defense": 55,
+      "spAttack": 75,
+      "spDefense": 65,
+      "speed": 30
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Bold"
+    ],
     "description": "During the day, it keeps its face buried in the ground. At night, it wanders around sowing its seeds."
   },
   {
     "id": 44,
     "name": "Gloom",
-    "types": ["Grass", "Poison"],
+    "types": [
+      "Grass",
+      "Poison"
+    ],
     "spriteKey": "gloom",
     "evolvesTo": 45,
     "minLevel": 99,
-    "baseStats": { "hp": 60, "attack": 65, "defense": 70, "speed": 40 },
-    "recommendedNatures": ["Modest", "Bold"],
+    "baseStats": {
+      "hp": 60,
+      "attack": 65,
+      "defense": 70,
+      "spAttack": 85,
+      "spDefense": 75,
+      "speed": 40
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Bold"
+    ],
     "description": "The fluid that oozes from its mouth isn't drool. It is a nectar that is used to attract prey."
   },
   {
     "id": 45,
     "name": "Vileplume",
-    "types": ["Grass", "Poison"],
+    "types": [
+      "Grass",
+      "Poison"
+    ],
     "spriteKey": "vileplume",
-    "baseStats": { "hp": 75, "attack": 80, "defense": 85, "speed": 50 },
-    "recommendedNatures": ["Modest", "Bold"],
+    "baseStats": {
+      "hp": 75,
+      "attack": 80,
+      "defense": 85,
+      "spAttack": 110,
+      "spDefense": 90,
+      "speed": 50
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Bold"
+    ],
     "description": "The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up."
   },
   {
     "id": 46,
     "name": "Paras",
-    "types": ["Bug", "Grass"],
+    "types": [
+      "Bug",
+      "Grass"
+    ],
     "spriteKey": "paras",
     "evolvesTo": 47,
     "minLevel": 24,
-    "baseStats": { "hp": 35, "attack": 70, "defense": 55, "speed": 25 },
-    "recommendedNatures": ["Adamant", "Careful"],
+    "baseStats": {
+      "hp": 35,
+      "attack": 70,
+      "defense": 55,
+      "spAttack": 45,
+      "spDefense": 55,
+      "speed": 25
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Careful"
+    ],
     "description": "Burrows to suck tree roots. The mushrooms on its back grow by drawing nutrients from the bug host."
   },
   {
     "id": 47,
     "name": "Parasect",
-    "types": ["Bug", "Grass"],
+    "types": [
+      "Bug",
+      "Grass"
+    ],
     "spriteKey": "parasect",
-    "baseStats": { "hp": 60, "attack": 95, "defense": 80, "speed": 30 },
-    "recommendedNatures": ["Adamant", "Careful"],
+    "baseStats": {
+      "hp": 60,
+      "attack": 95,
+      "defense": 80,
+      "spAttack": 60,
+      "spDefense": 80,
+      "speed": 30
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Careful"
+    ],
     "description": "A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places."
   },
   {
     "id": 48,
     "name": "Venonat",
-    "types": ["Bug", "Poison"],
+    "types": [
+      "Bug",
+      "Poison"
+    ],
     "spriteKey": "venonat",
     "evolvesTo": 49,
     "minLevel": 31,
-    "baseStats": { "hp": 60, "attack": 55, "defense": 50, "speed": 45 },
-    "recommendedNatures": ["Timid", "Modest"],
+    "baseStats": {
+      "hp": 60,
+      "attack": 55,
+      "defense": 50,
+      "spAttack": 40,
+      "spDefense": 55,
+      "speed": 45
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Modest"
+    ],
     "description": "Lives in the shadows of tall trees where it eats insects. It is attracted by light at night."
   },
   {
     "id": 49,
     "name": "Venomoth",
-    "types": ["Bug", "Poison"],
+    "types": [
+      "Bug",
+      "Poison"
+    ],
     "spriteKey": "venomoth",
-    "baseStats": { "hp": 70, "attack": 65, "defense": 60, "speed": 90 },
-    "recommendedNatures": ["Timid", "Modest"],
+    "baseStats": {
+      "hp": 70,
+      "attack": 65,
+      "defense": 60,
+      "spAttack": 90,
+      "spDefense": 75,
+      "speed": 90
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Modest"
+    ],
     "description": "The dust-like scales covering its wings are color coded to indicate the kinds of poison it has."
   },
   {
     "id": 50,
     "name": "Diglett",
-    "types": ["Ground"],
+    "types": [
+      "Ground"
+    ],
     "spriteKey": "diglett",
     "evolvesTo": 51,
     "minLevel": 26,
-    "baseStats": { "hp": 10, "attack": 55, "defense": 25, "speed": 95 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 10,
+      "attack": 55,
+      "defense": 25,
+      "spAttack": 35,
+      "spDefense": 45,
+      "speed": 95
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "Lives about one yard underground where it feeds on plant roots. It sometimes appears above ground."
   },
   {
     "id": 51,
     "name": "Dugtrio",
-    "types": ["Ground"],
+    "types": [
+      "Ground"
+    ],
     "spriteKey": "dugtrio",
-    "baseStats": { "hp": 35, "attack": 100, "defense": 50, "speed": 120 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 35,
+      "attack": 100,
+      "defense": 50,
+      "spAttack": 50,
+      "spDefense": 70,
+      "speed": 120
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "A team of Diglett triplets. It triggers huge earthquakes by burrowing 60 miles underground."
   },
   {
     "id": 52,
     "name": "Meowth",
-    "types": ["Normal"],
+    "types": [
+      "Normal"
+    ],
     "spriteKey": "meowth",
     "evolvesTo": 53,
     "minLevel": 28,
-    "baseStats": { "hp": 40, "attack": 45, "defense": 35, "speed": 90 },
-    "recommendedNatures": ["Jolly", "Timid"],
+    "baseStats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 35,
+      "spAttack": 40,
+      "spDefense": 40,
+      "speed": 90
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Timid"
+    ],
     "description": "Adores circular objects. Wanders the streets on a nightly basis to look for dropped loose change."
   },
   {
     "id": 53,
     "name": "Persian",
-    "types": ["Normal"],
+    "types": [
+      "Normal"
+    ],
     "spriteKey": "persian",
-    "baseStats": { "hp": 65, "attack": 70, "defense": 60, "speed": 115 },
-    "recommendedNatures": ["Jolly", "Timid"],
+    "baseStats": {
+      "hp": 65,
+      "attack": 70,
+      "defense": 60,
+      "spAttack": 65,
+      "spDefense": 65,
+      "speed": 115
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Timid"
+    ],
     "description": "Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness."
   },
   {
     "id": 54,
     "name": "Psyduck",
-    "types": ["Water"],
+    "types": [
+      "Water"
+    ],
     "spriteKey": "psyduck",
     "evolvesTo": 55,
     "minLevel": 33,
-    "baseStats": { "hp": 50, "attack": 52, "defense": 48, "speed": 55 },
-    "recommendedNatures": ["Modest", "Timid"],
+    "baseStats": {
+      "hp": 50,
+      "attack": 52,
+      "defense": 48,
+      "spAttack": 65,
+      "spDefense": 50,
+      "speed": 55
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Timid"
+    ],
     "description": "While lulling its enemies with its vacant look, this wily Pokémon will use psychokinetic powers."
   },
   {
     "id": 55,
     "name": "Golduck",
-    "types": ["Water"],
+    "types": [
+      "Water"
+    ],
     "spriteKey": "golduck",
-    "baseStats": { "hp": 80, "attack": 82, "defense": 78, "speed": 85 },
-    "recommendedNatures": ["Modest", "Timid"],
+    "baseStats": {
+      "hp": 80,
+      "attack": 82,
+      "defense": 78,
+      "spAttack": 95,
+      "spDefense": 80,
+      "speed": 85
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Timid"
+    ],
     "description": "Often seen swimming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa."
   },
   {
     "id": 56,
     "name": "Mankey",
-    "types": ["Fighting"],
+    "types": [
+      "Fighting"
+    ],
     "spriteKey": "mankey",
     "evolvesTo": 57,
     "minLevel": 28,
-    "baseStats": { "hp": 40, "attack": 80, "defense": 35, "speed": 70 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 40,
+      "attack": 80,
+      "defense": 35,
+      "spAttack": 35,
+      "spDefense": 45,
+      "speed": 70
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "Extremely quick to anger. It could be docile one moment then thrashing away the next instant."
   },
   {
     "id": 57,
     "name": "Primeape",
-    "types": ["Fighting"],
+    "types": [
+      "Fighting"
+    ],
     "spriteKey": "primeape",
-    "baseStats": { "hp": 65, "attack": 105, "defense": 60, "speed": 95 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 65,
+      "attack": 105,
+      "defense": 60,
+      "spAttack": 60,
+      "spDefense": 70,
+      "speed": 95
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "Always furious and tenacious to boot. It will not abandon chasing its quarry until it is caught."
   },
   {
     "id": 58,
     "name": "Growlithe",
-    "types": ["Fire"],
+    "types": [
+      "Fire"
+    ],
     "spriteKey": "growlithe",
     "evolvesTo": 59,
     "minLevel": 99,
-    "baseStats": { "hp": 55, "attack": 70, "defense": 45, "speed": 60 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 55,
+      "attack": 70,
+      "defense": 45,
+      "spAttack": 70,
+      "spDefense": 50,
+      "speed": 60
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "Very protective of its territory. It will bark and bite to repel intruders from its space."
   },
   {
     "id": 59,
     "name": "Arcanine",
-    "types": ["Fire"],
+    "types": [
+      "Fire"
+    ],
     "spriteKey": "arcanine",
-    "baseStats": { "hp": 90, "attack": 110, "defense": 80, "speed": 95 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 90,
+      "attack": 110,
+      "defense": 80,
+      "spAttack": 100,
+      "spDefense": 80,
+      "speed": 95
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "A Pokémon that has been admired since the past for its beauty. It runs agilely as if on wings."
   },
   {
     "id": 60,
     "name": "Poliwag",
-    "types": ["Water"],
+    "types": [
+      "Water"
+    ],
     "spriteKey": "poliwag",
     "evolvesTo": 61,
     "minLevel": 25,
-    "baseStats": { "hp": 40, "attack": 50, "defense": 40, "speed": 90 },
-    "recommendedNatures": ["Modest", "Bold"],
+    "baseStats": {
+      "hp": 40,
+      "attack": 50,
+      "defense": 40,
+      "spAttack": 40,
+      "spDefense": 40,
+      "speed": 90
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Bold"
+    ],
     "description": "Its newly grown legs prevent it from running. It appears to prefer swimming than trying to stand."
   },
   {
     "id": 61,
     "name": "Poliwhirl",
-    "types": ["Water"],
+    "types": [
+      "Water"
+    ],
     "spriteKey": "poliwhirl",
     "evolvesTo": 62,
     "minLevel": 99,
-    "baseStats": { "hp": 65, "attack": 65, "defense": 65, "speed": 90 },
-    "recommendedNatures": ["Modest", "Bold"],
+    "baseStats": {
+      "hp": 65,
+      "attack": 65,
+      "defense": 65,
+      "spAttack": 50,
+      "spDefense": 50,
+      "speed": 90
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Bold"
+    ],
     "description": "Capable of living in or out of water. When out of water, it sweats to keep its body slimy."
   },
   {
     "id": 62,
     "name": "Poliwrath",
-    "types": ["Water", "Fighting"],
+    "types": [
+      "Water",
+      "Fighting"
+    ],
     "spriteKey": "poliwrath",
-    "baseStats": { "hp": 90, "attack": 95, "defense": 95, "speed": 70 },
-    "recommendedNatures": ["Adamant", "Bold"],
+    "baseStats": {
+      "hp": 90,
+      "attack": 95,
+      "defense": 95,
+      "spAttack": 70,
+      "spDefense": 90,
+      "speed": 70
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Bold"
+    ],
     "description": "An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers."
   },
   {
     "id": 63,
     "name": "Abra",
-    "types": ["Psychic"],
+    "types": [
+      "Psychic"
+    ],
     "spriteKey": "abra",
     "evolvesTo": 64,
     "minLevel": 16,
-    "baseStats": { "hp": 25, "attack": 20, "defense": 15, "speed": 90 },
-    "recommendedNatures": ["Timid", "Modest"],
+    "baseStats": {
+      "hp": 25,
+      "attack": 20,
+      "defense": 15,
+      "spAttack": 105,
+      "spDefense": 55,
+      "speed": 90
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Modest"
+    ],
     "description": "Using its ability to read minds, it will identify impending danger and teleport to safety."
   },
   {
     "id": 64,
     "name": "Kadabra",
-    "types": ["Psychic"],
+    "types": [
+      "Psychic"
+    ],
     "spriteKey": "kadabra",
     "evolvesTo": 65,
     "minLevel": 99,
-    "baseStats": { "hp": 40, "attack": 35, "defense": 30, "speed": 105 },
-    "recommendedNatures": ["Timid", "Modest"],
+    "baseStats": {
+      "hp": 40,
+      "attack": 35,
+      "defense": 30,
+      "spAttack": 120,
+      "spDefense": 70,
+      "speed": 105
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Modest"
+    ],
     "description": "It emits special alpha waves from its body that induce headaches just by being close by."
   },
   {
     "id": 65,
     "name": "Alakazam",
-    "types": ["Psychic"],
+    "types": [
+      "Psychic"
+    ],
     "spriteKey": "alakazam",
-    "baseStats": { "hp": 55, "attack": 50, "defense": 45, "speed": 120 },
-    "recommendedNatures": ["Timid", "Modest"],
+    "baseStats": {
+      "hp": 55,
+      "attack": 50,
+      "defense": 45,
+      "spAttack": 135,
+      "spDefense": 95,
+      "speed": 120
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Modest"
+    ],
     "description": "Its brain can outperform a supercomputer. Its intelligence quotient is said to be 5,000."
   },
   {
     "id": 66,
     "name": "Machop",
-    "types": ["Fighting"],
+    "types": [
+      "Fighting"
+    ],
     "spriteKey": "machop",
     "evolvesTo": 67,
     "minLevel": 28,
-    "baseStats": { "hp": 70, "attack": 80, "defense": 50, "speed": 35 },
-    "recommendedNatures": ["Adamant", "Jolly"],
+    "baseStats": {
+      "hp": 70,
+      "attack": 80,
+      "defense": 50,
+      "spAttack": 35,
+      "spDefense": 35,
+      "speed": 35
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Jolly"
+    ],
     "description": "Loves to build its muscles. It trains in all styles of martial arts to become even stronger."
   },
   {
     "id": 67,
     "name": "Machoke",
-    "types": ["Fighting"],
+    "types": [
+      "Fighting"
+    ],
     "spriteKey": "machoke",
     "evolvesTo": 68,
     "minLevel": 99,
-    "baseStats": { "hp": 80, "attack": 100, "defense": 70, "speed": 45 },
-    "recommendedNatures": ["Adamant", "Jolly"],
+    "baseStats": {
+      "hp": 80,
+      "attack": 100,
+      "defense": 70,
+      "spAttack": 50,
+      "spDefense": 60,
+      "speed": 45
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Jolly"
+    ],
     "description": "Its muscular body is so powerful, it must wear a power-save belt to be able to regulate its motions."
   },
   {
     "id": 68,
     "name": "Machamp",
-    "types": ["Fighting"],
+    "types": [
+      "Fighting"
+    ],
     "spriteKey": "machamp",
-    "baseStats": { "hp": 90, "attack": 130, "defense": 80, "speed": 55 },
-    "recommendedNatures": ["Adamant", "Jolly"],
+    "baseStats": {
+      "hp": 90,
+      "attack": 130,
+      "defense": 80,
+      "spAttack": 65,
+      "spDefense": 85,
+      "speed": 55
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Jolly"
+    ],
     "description": "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon."
   },
   {
     "id": 69,
     "name": "Bellsprout",
-    "types": ["Grass", "Poison"],
+    "types": [
+      "Grass",
+      "Poison"
+    ],
     "spriteKey": "bellsprout",
     "evolvesTo": 70,
     "minLevel": 21,
-    "baseStats": { "hp": 50, "attack": 75, "defense": 35, "speed": 40 },
-    "recommendedNatures": ["Modest", "Timid"],
+    "baseStats": {
+      "hp": 50,
+      "attack": 75,
+      "defense": 35,
+      "spAttack": 70,
+      "spDefense": 30,
+      "speed": 40
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Timid"
+    ],
     "description": "A carnivorous Pokémon that traps and eats bugs. It uses its root feet to soak up needed moisture."
   },
   {
     "id": 70,
     "name": "Weepinbell",
-    "types": ["Grass", "Poison"],
+    "types": [
+      "Grass",
+      "Poison"
+    ],
     "spriteKey": "weepinbell",
     "evolvesTo": 71,
     "minLevel": 99,
-    "baseStats": { "hp": 65, "attack": 90, "defense": 50, "speed": 55 },
-    "recommendedNatures": ["Modest", "Timid"],
+    "baseStats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 50,
+      "spAttack": 85,
+      "spDefense": 45,
+      "speed": 55
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Timid"
+    ],
     "description": "It spits out poisonpowder to immobilize the enemy and then finishes it with a spray of acid."
   },
   {
     "id": 71,
     "name": "Victreebel",
-    "types": ["Grass", "Poison"],
+    "types": [
+      "Grass",
+      "Poison"
+    ],
     "spriteKey": "victreebel",
-    "baseStats": { "hp": 80, "attack": 105, "defense": 65, "speed": 70 },
-    "recommendedNatures": ["Modest", "Adamant"],
+    "baseStats": {
+      "hp": 80,
+      "attack": 105,
+      "defense": 65,
+      "spAttack": 100,
+      "spDefense": 70,
+      "speed": 70
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Adamant"
+    ],
     "description": "Said to live in huge colonies deep in jungles, although no one has ever returned from there."
   },
   {
     "id": 72,
     "name": "Tentacool",
-    "types": ["Water", "Poison"],
+    "types": [
+      "Water",
+      "Poison"
+    ],
     "spriteKey": "tentacool",
     "evolvesTo": 73,
     "minLevel": 30,
-    "baseStats": { "hp": 40, "attack": 40, "defense": 35, "speed": 70 },
-    "recommendedNatures": ["Timid", "Bold"],
+    "baseStats": {
+      "hp": 40,
+      "attack": 40,
+      "defense": 35,
+      "spAttack": 50,
+      "spDefense": 100,
+      "speed": 70
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Bold"
+    ],
     "description": "Drifts in shallow seas. Anglers who hook them by accident are often punished by its stinging acid."
   },
   {
     "id": 73,
     "name": "Tentacruel",
-    "types": ["Water", "Poison"],
+    "types": [
+      "Water",
+      "Poison"
+    ],
     "spriteKey": "tentacruel",
-    "baseStats": { "hp": 80, "attack": 70, "defense": 65, "speed": 100 },
-    "recommendedNatures": ["Timid", "Bold"],
+    "baseStats": {
+      "hp": 80,
+      "attack": 70,
+      "defense": 65,
+      "spAttack": 80,
+      "spDefense": 120,
+      "speed": 100
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Bold"
+    ],
     "description": "The tentacles are normally kept short. On hunts, they are extended to ensnare and immobilize prey."
   },
   {
     "id": 74,
     "name": "Geodude",
-    "types": ["Rock", "Ground"],
+    "types": [
+      "Rock",
+      "Ground"
+    ],
     "spriteKey": "geodude",
     "evolvesTo": 75,
     "minLevel": 25,
-    "baseStats": { "hp": 40, "attack": 80, "defense": 100, "speed": 20 },
-    "recommendedNatures": ["Adamant", "Impish"],
+    "baseStats": {
+      "hp": 40,
+      "attack": 80,
+      "defense": 100,
+      "spAttack": 30,
+      "spDefense": 30,
+      "speed": 20
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Impish"
+    ],
     "description": "Found in fields and mountains. Mistaking them for boulders, people often step or trip on them."
   },
   {
     "id": 75,
     "name": "Graveler",
-    "types": ["Rock", "Ground"],
+    "types": [
+      "Rock",
+      "Ground"
+    ],
     "spriteKey": "graveler",
     "evolvesTo": 76,
     "minLevel": 99,
-    "baseStats": { "hp": 55, "attack": 95, "defense": 115, "speed": 35 },
-    "recommendedNatures": ["Adamant", "Impish"],
+    "baseStats": {
+      "hp": 55,
+      "attack": 95,
+      "defense": 115,
+      "spAttack": 45,
+      "spDefense": 45,
+      "speed": 35
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Impish"
+    ],
     "description": "Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction."
   },
   {
     "id": 76,
     "name": "Golem",
-    "types": ["Rock", "Ground"],
+    "types": [
+      "Rock",
+      "Ground"
+    ],
     "spriteKey": "golem",
-    "baseStats": { "hp": 80, "attack": 120, "defense": 130, "speed": 45 },
-    "recommendedNatures": ["Adamant", "Impish"],
+    "baseStats": {
+      "hp": 80,
+      "attack": 120,
+      "defense": 130,
+      "spAttack": 55,
+      "spDefense": 65,
+      "speed": 45
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Impish"
+    ],
     "description": "Its boulder-like body is extremely hard. It can easily withstand dynamite blasts without damage."
   },
   {
     "id": 77,
     "name": "Ponyta",
-    "types": ["Fire"],
+    "types": [
+      "Fire"
+    ],
     "spriteKey": "ponyta",
     "evolvesTo": 78,
     "minLevel": 40,
-    "baseStats": { "hp": 50, "attack": 85, "defense": 55, "speed": 90 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 50,
+      "attack": 85,
+      "defense": 55,
+      "spAttack": 65,
+      "spDefense": 65,
+      "speed": 90
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "Its hooves are 10 times harder than diamonds. It can trample anything completely flat in little time."
   },
   {
     "id": 78,
     "name": "Rapidash",
-    "types": ["Fire"],
+    "types": [
+      "Fire"
+    ],
     "spriteKey": "rapidash",
-    "baseStats": { "hp": 65, "attack": 100, "defense": 70, "speed": 105 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 65,
+      "attack": 100,
+      "defense": 70,
+      "spAttack": 80,
+      "spDefense": 80,
+      "speed": 105
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "Very competitive, this Pokémon will chase anything that moves fast in the hopes of racing it."
   },
   {
     "id": 79,
     "name": "Slowpoke",
-    "types": ["Water", "Psychic"],
+    "types": [
+      "Water",
+      "Psychic"
+    ],
     "spriteKey": "slowpoke",
     "evolvesTo": 80,
     "minLevel": 37,
-    "baseStats": { "hp": 90, "attack": 65, "defense": 65, "speed": 15 },
-    "recommendedNatures": ["Bold", "Calm"],
+    "baseStats": {
+      "hp": 90,
+      "attack": 65,
+      "defense": 65,
+      "spAttack": 40,
+      "spDefense": 40,
+      "speed": 15
+    },
+    "recommendedNatures": [
+      "Bold",
+      "Calm"
+    ],
     "description": "Incredibly slow and dopey. It takes 5 seconds for it to feel pain when under attack."
   },
   {
     "id": 80,
     "name": "Slowbro",
-    "types": ["Water", "Psychic"],
+    "types": [
+      "Water",
+      "Psychic"
+    ],
     "spriteKey": "slowbro",
-    "baseStats": { "hp": 95, "attack": 75, "defense": 110, "speed": 30 },
-    "recommendedNatures": ["Bold", "Calm"],
+    "baseStats": {
+      "hp": 95,
+      "attack": 75,
+      "defense": 110,
+      "spAttack": 100,
+      "spDefense": 80,
+      "speed": 30
+    },
+    "recommendedNatures": [
+      "Bold",
+      "Calm"
+    ],
     "description": "The Shellder that is latched onto Slowpoke's tail is said to feed on the host's left over scraps."
   },
   {
     "id": 81,
     "name": "Magnemite",
-    "types": ["Electric", "Steel"],
+    "types": [
+      "Electric",
+      "Steel"
+    ],
     "spriteKey": "magnemite",
     "evolvesTo": 82,
     "minLevel": 30,
-    "baseStats": { "hp": 25, "attack": 35, "defense": 70, "speed": 45 },
-    "recommendedNatures": ["Modest", "Timid"],
+    "baseStats": {
+      "hp": 25,
+      "attack": 35,
+      "defense": 70,
+      "spAttack": 95,
+      "spDefense": 55,
+      "speed": 45
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Timid"
+    ],
     "description": "Uses anti-gravity to stay suspended. Appears without warning and uses Thunder Wave and similar moves."
   },
   {
     "id": 82,
     "name": "Magneton",
-    "types": ["Electric", "Steel"],
+    "types": [
+      "Electric",
+      "Steel"
+    ],
     "spriteKey": "magneton",
-    "baseStats": { "hp": 50, "attack": 60, "defense": 95, "speed": 70 },
-    "recommendedNatures": ["Modest", "Timid"],
+    "baseStats": {
+      "hp": 50,
+      "attack": 60,
+      "defense": 95,
+      "spAttack": 120,
+      "spDefense": 70,
+      "speed": 70
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Timid"
+    ],
     "description": "Formed by several Magnemite linked together. They frequently appear when sunspots flare up."
   },
   {
     "id": 83,
     "name": "Farfetch'd",
-    "types": ["Normal", "Flying"],
+    "types": [
+      "Normal",
+      "Flying"
+    ],
     "spriteKey": "farfetchd",
-    "baseStats": { "hp": 52, "attack": 90, "defense": 55, "speed": 60 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 52,
+      "attack": 90,
+      "defense": 55,
+      "spAttack": 58,
+      "spDefense": 62,
+      "speed": 60
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "The sprig of green onions it holds is its weapon. It is used much like a metal sword."
   },
   {
     "id": 84,
     "name": "Doduo",
-    "types": ["Normal", "Flying"],
+    "types": [
+      "Normal",
+      "Flying"
+    ],
     "spriteKey": "doduo",
     "evolvesTo": 85,
     "minLevel": 31,
-    "baseStats": { "hp": 35, "attack": 85, "defense": 45, "speed": 75 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 35,
+      "attack": 85,
+      "defense": 45,
+      "spAttack": 35,
+      "spDefense": 35,
+      "speed": 75
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "A bird that makes up for its poor flying with its fast foot speed. Leaves giant footprints."
   },
   {
     "id": 85,
     "name": "Dodrio",
-    "types": ["Normal", "Flying"],
+    "types": [
+      "Normal",
+      "Flying"
+    ],
     "spriteKey": "dodrio",
-    "baseStats": { "hp": 60, "attack": 110, "defense": 70, "speed": 110 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 60,
+      "attack": 110,
+      "defense": 70,
+      "spAttack": 60,
+      "spDefense": 60,
+      "speed": 110
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "Uses its three brains to execute complex plans. While two heads sleep, one head stays awake."
   },
   {
     "id": 86,
     "name": "Seel",
-    "types": ["Water"],
+    "types": [
+      "Water"
+    ],
     "spriteKey": "seel",
     "evolvesTo": 87,
     "minLevel": 34,
-    "baseStats": { "hp": 65, "attack": 45, "defense": 55, "speed": 45 },
-    "recommendedNatures": ["Bold", "Calm"],
+    "baseStats": {
+      "hp": 65,
+      "attack": 45,
+      "defense": 55,
+      "spAttack": 45,
+      "spDefense": 70,
+      "speed": 45
+    },
+    "recommendedNatures": [
+      "Bold",
+      "Calm"
+    ],
     "description": "The protruding horn on its head is very hard. It is used for bashing through thick ice."
   },
   {
     "id": 87,
     "name": "Dewgong",
-    "types": ["Water", "Ice"],
+    "types": [
+      "Water",
+      "Ice"
+    ],
     "spriteKey": "dewgong",
-    "baseStats": { "hp": 90, "attack": 70, "defense": 80, "speed": 70 },
-    "recommendedNatures": ["Bold", "Calm"],
+    "baseStats": {
+      "hp": 90,
+      "attack": 70,
+      "defense": 80,
+      "spAttack": 70,
+      "spDefense": 95,
+      "speed": 70
+    },
+    "recommendedNatures": [
+      "Bold",
+      "Calm"
+    ],
     "description": "Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters."
   },
   {
     "id": 88,
     "name": "Grimer",
-    "types": ["Poison"],
+    "types": [
+      "Poison"
+    ],
     "spriteKey": "grimer",
     "evolvesTo": 89,
     "minLevel": 38,
-    "baseStats": { "hp": 80, "attack": 80, "defense": 50, "speed": 25 },
-    "recommendedNatures": ["Adamant", "Careful"],
+    "baseStats": {
+      "hp": 80,
+      "attack": 80,
+      "defense": 50,
+      "spAttack": 40,
+      "spDefense": 50,
+      "speed": 25
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Careful"
+    ],
     "description": "Appears in filthy areas. Thrives by sucking up polluted sludge that is pumped out of factories."
   },
   {
     "id": 89,
     "name": "Muk",
-    "types": ["Poison"],
+    "types": [
+      "Poison"
+    ],
     "spriteKey": "muk",
-    "baseStats": { "hp": 105, "attack": 105, "defense": 75, "speed": 50 },
-    "recommendedNatures": ["Adamant", "Careful"],
+    "baseStats": {
+      "hp": 105,
+      "attack": 105,
+      "defense": 75,
+      "spAttack": 65,
+      "spDefense": 100,
+      "speed": 50
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Careful"
+    ],
     "description": "Thickly covered with a filthy, vile sludge. It is so toxic, even its footprints contain poison."
   },
   {
     "id": 90,
     "name": "Shellder",
-    "types": ["Water"],
+    "types": [
+      "Water"
+    ],
     "spriteKey": "shellder",
     "evolvesTo": 91,
     "minLevel": 99,
-    "baseStats": { "hp": 30, "attack": 65, "defense": 100, "speed": 40 },
-    "recommendedNatures": ["Adamant", "Jolly"],
+    "baseStats": {
+      "hp": 30,
+      "attack": 65,
+      "defense": 100,
+      "spAttack": 45,
+      "spDefense": 25,
+      "speed": 40
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Jolly"
+    ],
     "description": "Its hard shell repels any kind of attack. It is vulnerable only when its shell is open."
   },
   {
     "id": 91,
     "name": "Cloyster",
-    "types": ["Water", "Ice"],
+    "types": [
+      "Water",
+      "Ice"
+    ],
     "spriteKey": "cloyster",
-    "baseStats": { "hp": 50, "attack": 95, "defense": 180, "speed": 70 },
-    "recommendedNatures": ["Adamant", "Jolly"],
+    "baseStats": {
+      "hp": 50,
+      "attack": 95,
+      "defense": 180,
+      "spAttack": 85,
+      "spDefense": 45,
+      "speed": 70
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Jolly"
+    ],
     "description": "When attacked, it launches its horns in quick volleys. Its innards have never been seen."
   },
   {
     "id": 92,
     "name": "Gastly",
-    "types": ["Ghost", "Poison"],
+    "types": [
+      "Ghost",
+      "Poison"
+    ],
     "spriteKey": "gastly",
     "evolvesTo": 93,
     "minLevel": 25,
-    "baseStats": { "hp": 30, "attack": 35, "defense": 30, "speed": 80 },
-    "recommendedNatures": ["Timid", "Modest"],
+    "baseStats": {
+      "hp": 30,
+      "attack": 35,
+      "defense": 30,
+      "spAttack": 100,
+      "spDefense": 35,
+      "speed": 80
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Modest"
+    ],
     "description": "Almost invisible, this gaseous Pokémon cloaks the target and puts it to sleep without notice."
   },
   {
     "id": 93,
     "name": "Haunter",
-    "types": ["Ghost", "Poison"],
+    "types": [
+      "Ghost",
+      "Poison"
+    ],
     "spriteKey": "haunter",
     "evolvesTo": 94,
     "minLevel": 99,
-    "baseStats": { "hp": 45, "attack": 50, "defense": 45, "speed": 95 },
-    "recommendedNatures": ["Timid", "Modest"],
+    "baseStats": {
+      "hp": 45,
+      "attack": 50,
+      "defense": 45,
+      "spAttack": 115,
+      "spDefense": 55,
+      "speed": 95
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Modest"
+    ],
     "description": "Because of its ability to slip through block walls, it is said to be from another dimension."
   },
   {
     "id": 94,
     "name": "Gengar",
-    "types": ["Ghost", "Poison"],
+    "types": [
+      "Ghost",
+      "Poison"
+    ],
     "spriteKey": "gengar",
-    "baseStats": { "hp": 60, "attack": 65, "defense": 60, "speed": 110 },
-    "recommendedNatures": ["Timid", "Modest"],
+    "baseStats": {
+      "hp": 60,
+      "attack": 65,
+      "defense": 60,
+      "spAttack": 130,
+      "spDefense": 75,
+      "speed": 110
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Modest"
+    ],
     "description": "Under a full moon, this Pokémon likes to mimic the shadows of people and laugh at their fright."
   },
   {
     "id": 95,
     "name": "Onix",
-    "types": ["Rock", "Ground"],
+    "types": [
+      "Rock",
+      "Ground"
+    ],
     "spriteKey": "onix",
-    "baseStats": { "hp": 35, "attack": 45, "defense": 160, "speed": 70 },
-    "recommendedNatures": ["Impish", "Careful"],
+    "baseStats": {
+      "hp": 35,
+      "attack": 45,
+      "defense": 160,
+      "spAttack": 30,
+      "spDefense": 45,
+      "speed": 70
+    },
+    "recommendedNatures": [
+      "Impish",
+      "Careful"
+    ],
     "description": "As it grows, the stone portions of its body harden to become similar to a diamond, but colored black."
   },
   {
     "id": 96,
     "name": "Drowzee",
-    "types": ["Psychic"],
+    "types": [
+      "Psychic"
+    ],
     "spriteKey": "drowzee",
     "evolvesTo": 97,
     "minLevel": 26,
-    "baseStats": { "hp": 60, "attack": 48, "defense": 45, "speed": 42 },
-    "recommendedNatures": ["Calm", "Bold"],
+    "baseStats": {
+      "hp": 60,
+      "attack": 48,
+      "defense": 45,
+      "spAttack": 43,
+      "spDefense": 90,
+      "speed": 42
+    },
+    "recommendedNatures": [
+      "Calm",
+      "Bold"
+    ],
     "description": "Puts enemies to sleep then eats their dreams. Occasionally gets sick from eating bad dreams."
   },
   {
     "id": 97,
     "name": "Hypno",
-    "types": ["Psychic"],
+    "types": [
+      "Psychic"
+    ],
     "spriteKey": "hypno",
-    "baseStats": { "hp": 85, "attack": 73, "defense": 70, "speed": 67 },
-    "recommendedNatures": ["Calm", "Bold"],
+    "baseStats": {
+      "hp": 85,
+      "attack": 73,
+      "defense": 70,
+      "spAttack": 73,
+      "spDefense": 115,
+      "speed": 67
+    },
+    "recommendedNatures": [
+      "Calm",
+      "Bold"
+    ],
     "description": "When it locks eyes with an enemy, it will use a mix of psi moves such as Hypnosis and Confusion."
   },
   {
     "id": 98,
     "name": "Krabby",
-    "types": ["Water"],
+    "types": [
+      "Water"
+    ],
     "spriteKey": "krabby",
     "evolvesTo": 99,
     "minLevel": 28,
-    "baseStats": { "hp": 30, "attack": 105, "defense": 90, "speed": 50 },
-    "recommendedNatures": ["Adamant", "Jolly"],
+    "baseStats": {
+      "hp": 30,
+      "attack": 105,
+      "defense": 90,
+      "spAttack": 25,
+      "spDefense": 25,
+      "speed": 50
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Jolly"
+    ],
     "description": "Its pincers are not only powerful weapons, they are used for balance when walking sideways."
   },
   {
     "id": 99,
     "name": "Kingler",
-    "types": ["Water"],
+    "types": [
+      "Water"
+    ],
     "spriteKey": "kingler",
-    "baseStats": { "hp": 55, "attack": 130, "defense": 115, "speed": 75 },
-    "recommendedNatures": ["Adamant", "Jolly"],
+    "baseStats": {
+      "hp": 55,
+      "attack": 130,
+      "defense": 115,
+      "spAttack": 50,
+      "spDefense": 50,
+      "speed": 75
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Jolly"
+    ],
     "description": "The large pincer has 10000 hp of crushing power. However, its huge size makes it unwieldy to use."
   },
   {
     "id": 100,
     "name": "Voltorb",
-    "types": ["Electric"],
+    "types": [
+      "Electric"
+    ],
     "spriteKey": "voltorb",
     "evolvesTo": 101,
     "minLevel": 30,
-    "baseStats": { "hp": 40, "attack": 30, "defense": 50, "speed": 100 },
-    "recommendedNatures": ["Timid", "Hasty"],
+    "baseStats": {
+      "hp": 40,
+      "attack": 30,
+      "defense": 50,
+      "spAttack": 55,
+      "spDefense": 55,
+      "speed": 100
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Hasty"
+    ],
     "description": "Usually found in power plants. Easily mistaken for a Poké Ball, they have zapped many people."
   },
   {
     "id": 101,
     "name": "Electrode",
-    "types": ["Electric"],
+    "types": [
+      "Electric"
+    ],
     "spriteKey": "electrode",
-    "baseStats": { "hp": 60, "attack": 50, "defense": 70, "speed": 150 },
-    "recommendedNatures": ["Timid", "Hasty"],
+    "baseStats": {
+      "hp": 60,
+      "attack": 50,
+      "defense": 70,
+      "spAttack": 80,
+      "spDefense": 80,
+      "speed": 150
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Hasty"
+    ],
     "description": "It stores electric energy under very high pressure. It often explodes with little or no provocation."
   },
   {
     "id": 102,
     "name": "Exeggcute",
-    "types": ["Grass", "Psychic"],
+    "types": [
+      "Grass",
+      "Psychic"
+    ],
     "spriteKey": "exeggcute",
     "evolvesTo": 103,
     "minLevel": 99,
-    "baseStats": { "hp": 60, "attack": 40, "defense": 80, "speed": 40 },
-    "recommendedNatures": ["Bold", "Calm"],
+    "baseStats": {
+      "hp": 60,
+      "attack": 40,
+      "defense": 80,
+      "spAttack": 60,
+      "spDefense": 45,
+      "speed": 40
+    },
+    "recommendedNatures": [
+      "Bold",
+      "Calm"
+    ],
     "description": "Often mistaken for eggs. When disturbed, they quickly gather and attack in swarms."
   },
   {
     "id": 103,
     "name": "Exeggutor",
-    "types": ["Grass", "Psychic"],
+    "types": [
+      "Grass",
+      "Psychic"
+    ],
     "spriteKey": "exeggutor",
-    "baseStats": { "hp": 95, "attack": 95, "defense": 85, "speed": 55 },
-    "recommendedNatures": ["Modest", "Quiet"],
+    "baseStats": {
+      "hp": 95,
+      "attack": 95,
+      "defense": 85,
+      "spAttack": 125,
+      "spDefense": 75,
+      "speed": 55
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Quiet"
+    ],
     "description": "Legend has it that on rare occasions, one of its heads will drop off and continue on as an Exeggcute."
   },
   {
     "id": 104,
     "name": "Cubone",
-    "types": ["Ground"],
+    "types": [
+      "Ground"
+    ],
     "spriteKey": "cubone",
     "evolvesTo": 105,
     "minLevel": 28,
-    "baseStats": { "hp": 50, "attack": 50, "defense": 95, "speed": 35 },
-    "recommendedNatures": ["Adamant", "Brave"],
+    "baseStats": {
+      "hp": 50,
+      "attack": 50,
+      "defense": 95,
+      "spAttack": 40,
+      "spDefense": 50,
+      "speed": 35
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Brave"
+    ],
     "description": "Because it never removes its skull helmet, no one has ever seen this Pokémon's real face."
   },
   {
     "id": 105,
     "name": "Marowak",
-    "types": ["Ground"],
+    "types": [
+      "Ground"
+    ],
     "spriteKey": "marowak",
-    "baseStats": { "hp": 60, "attack": 80, "defense": 110, "speed": 45 },
-    "recommendedNatures": ["Adamant", "Brave"],
+    "baseStats": {
+      "hp": 60,
+      "attack": 80,
+      "defense": 110,
+      "spAttack": 50,
+      "spDefense": 80,
+      "speed": 45
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Brave"
+    ],
     "description": "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets."
   },
   {
     "id": 106,
     "name": "Hitmonlee",
-    "types": ["Fighting"],
+    "types": [
+      "Fighting"
+    ],
     "spriteKey": "hitmonlee",
-    "baseStats": { "hp": 50, "attack": 120, "defense": 53, "speed": 87 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 50,
+      "attack": 120,
+      "defense": 53,
+      "spAttack": 35,
+      "spDefense": 110,
+      "speed": 87
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "When in a hurry, its legs lengthen progressively. It runs smoothly with extra long, loping strides."
   },
   {
     "id": 107,
     "name": "Hitmonchan",
-    "types": ["Fighting"],
+    "types": [
+      "Fighting"
+    ],
     "spriteKey": "hitmonchan",
-    "baseStats": { "hp": 50, "attack": 105, "defense": 79, "speed": 76 },
-    "recommendedNatures": ["Adamant", "Jolly"],
+    "baseStats": {
+      "hp": 50,
+      "attack": 105,
+      "defense": 79,
+      "spAttack": 35,
+      "spDefense": 110,
+      "speed": 76
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Jolly"
+    ],
     "description": "While apparently doing nothing, it fires punches in lightning fast volleys that are impossible to see."
   },
   {
     "id": 108,
     "name": "Lickitung",
-    "types": ["Normal"],
+    "types": [
+      "Normal"
+    ],
     "spriteKey": "lickitung",
-    "baseStats": { "hp": 90, "attack": 55, "defense": 75, "speed": 30 },
-    "recommendedNatures": ["Careful", "Adamant"],
+    "baseStats": {
+      "hp": 90,
+      "attack": 55,
+      "defense": 75,
+      "spAttack": 60,
+      "spDefense": 75,
+      "speed": 30
+    },
+    "recommendedNatures": [
+      "Careful",
+      "Adamant"
+    ],
     "description": "Its tongue can be extended like a chameleon's. It leaves a tingling sensation when it licks enemies."
   },
   {
     "id": 109,
     "name": "Koffing",
-    "types": ["Poison"],
+    "types": [
+      "Poison"
+    ],
     "spriteKey": "koffing",
     "evolvesTo": 110,
     "minLevel": 35,
-    "baseStats": { "hp": 40, "attack": 65, "defense": 95, "speed": 35 },
-    "recommendedNatures": ["Bold", "Calm"],
+    "baseStats": {
+      "hp": 40,
+      "attack": 65,
+      "defense": 95,
+      "spAttack": 60,
+      "spDefense": 45,
+      "speed": 35
+    },
+    "recommendedNatures": [
+      "Bold",
+      "Calm"
+    ],
     "description": "Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning."
   },
   {
     "id": 110,
     "name": "Weezing",
-    "types": ["Poison"],
+    "types": [
+      "Poison"
+    ],
     "spriteKey": "weezing",
-    "baseStats": { "hp": 65, "attack": 90, "defense": 120, "speed": 60 },
-    "recommendedNatures": ["Bold", "Calm"],
+    "baseStats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 120,
+      "spAttack": 85,
+      "spDefense": 70,
+      "speed": 60
+    },
+    "recommendedNatures": [
+      "Bold",
+      "Calm"
+    ],
     "description": "Where two kinds of poison gases meet, 2 Koffings can fuse into a Weezing over many years."
   },
   {
     "id": 111,
     "name": "Rhyhorn",
-    "types": ["Ground", "Rock"],
+    "types": [
+      "Ground",
+      "Rock"
+    ],
     "spriteKey": "rhyhorn",
     "evolvesTo": 112,
     "minLevel": 42,
-    "baseStats": { "hp": 80, "attack": 85, "defense": 95, "speed": 25 },
-    "recommendedNatures": ["Adamant", "Brave"],
+    "baseStats": {
+      "hp": 80,
+      "attack": 85,
+      "defense": 95,
+      "spAttack": 30,
+      "spDefense": 30,
+      "speed": 25
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Brave"
+    ],
     "description": "Its massive bones are 1000 times harder than human bones. It can easily knock a trailer flying."
   },
   {
     "id": 112,
     "name": "Rhydon",
-    "types": ["Ground", "Rock"],
+    "types": [
+      "Ground",
+      "Rock"
+    ],
     "spriteKey": "rhydon",
-    "baseStats": { "hp": 105, "attack": 130, "defense": 120, "speed": 40 },
-    "recommendedNatures": ["Adamant", "Brave"],
+    "baseStats": {
+      "hp": 105,
+      "attack": 130,
+      "defense": 120,
+      "spAttack": 45,
+      "spDefense": 45,
+      "speed": 40
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Brave"
+    ],
     "description": "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees."
   },
   {
     "id": 113,
     "name": "Chansey",
-    "types": ["Normal"],
+    "types": [
+      "Normal"
+    ],
     "spriteKey": "chansey",
-    "baseStats": { "hp": 250, "attack": 5, "defense": 5, "speed": 50 },
-    "recommendedNatures": ["Bold", "Calm"],
+    "baseStats": {
+      "hp": 250,
+      "attack": 5,
+      "defense": 5,
+      "spAttack": 35,
+      "spDefense": 105,
+      "speed": 50
+    },
+    "recommendedNatures": [
+      "Bold",
+      "Calm"
+    ],
     "description": "A rare and elusive Pokémon that is said to bring happiness to those who manage to get it."
   },
   {
     "id": 114,
     "name": "Tangela",
-    "types": ["Grass"],
+    "types": [
+      "Grass"
+    ],
     "spriteKey": "tangela",
-    "baseStats": { "hp": 65, "attack": 55, "defense": 115, "speed": 60 },
-    "recommendedNatures": ["Bold", "Calm"],
+    "baseStats": {
+      "hp": 65,
+      "attack": 55,
+      "defense": 115,
+      "spAttack": 100,
+      "spDefense": 40,
+      "speed": 60
+    },
+    "recommendedNatures": [
+      "Bold",
+      "Calm"
+    ],
     "description": "The whole body is swathed with wide vines that are similar to seaweed. Its vines shake as it walks."
   },
   {
     "id": 115,
     "name": "Kangaskhan",
-    "types": ["Normal"],
+    "types": [
+      "Normal"
+    ],
     "spriteKey": "kangaskhan",
-    "baseStats": { "hp": 105, "attack": 95, "defense": 80, "speed": 90 },
-    "recommendedNatures": ["Adamant", "Jolly"],
+    "baseStats": {
+      "hp": 105,
+      "attack": 95,
+      "defense": 80,
+      "spAttack": 40,
+      "spDefense": 80,
+      "speed": 90
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Jolly"
+    ],
     "description": "The infant rarely ventures out of its mother's protective pouch until it is 3 years old."
   },
   {
     "id": 116,
     "name": "Horsea",
-    "types": ["Water"],
+    "types": [
+      "Water"
+    ],
     "spriteKey": "horsea",
     "evolvesTo": 117,
     "minLevel": 32,
-    "baseStats": { "hp": 30, "attack": 40, "defense": 70, "speed": 60 },
-    "recommendedNatures": ["Modest", "Timid"],
+    "baseStats": {
+      "hp": 30,
+      "attack": 40,
+      "defense": 70,
+      "spAttack": 70,
+      "spDefense": 25,
+      "speed": 60
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Timid"
+    ],
     "description": "Known to shoot down flying bugs with precision blasts of ink from the surface of the water."
   },
   {
     "id": 117,
     "name": "Seadra",
-    "types": ["Water"],
+    "types": [
+      "Water"
+    ],
     "spriteKey": "seadra",
-    "baseStats": { "hp": 55, "attack": 65, "defense": 95, "speed": 85 },
-    "recommendedNatures": ["Modest", "Timid"],
+    "baseStats": {
+      "hp": 55,
+      "attack": 65,
+      "defense": 95,
+      "spAttack": 95,
+      "spDefense": 45,
+      "speed": 85
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Timid"
+    ],
     "description": "Capable of swimming backwards by rapidly flapping its wing-like pectoral fins and stout tail."
   },
   {
     "id": 118,
     "name": "Goldeen",
-    "types": ["Water"],
+    "types": [
+      "Water"
+    ],
     "spriteKey": "goldeen",
     "evolvesTo": 119,
     "minLevel": 33,
-    "baseStats": { "hp": 45, "attack": 67, "defense": 60, "speed": 63 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 45,
+      "attack": 67,
+      "defense": 60,
+      "spAttack": 35,
+      "spDefense": 50,
+      "speed": 63
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "Its tail fin billows like an elegant ballroom dress, giving it the nickname of the Water Queen."
   },
   {
     "id": 119,
     "name": "Seaking",
-    "types": ["Water"],
+    "types": [
+      "Water"
+    ],
     "spriteKey": "seaking",
-    "baseStats": { "hp": 80, "attack": 92, "defense": 65, "speed": 68 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 80,
+      "attack": 92,
+      "defense": 65,
+      "spAttack": 65,
+      "spDefense": 80,
+      "speed": 68
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "In the autumn spawning season, they can be seen swimming powerfully up rivers and creeks."
   },
   {
     "id": 120,
     "name": "Staryu",
-    "types": ["Water"],
+    "types": [
+      "Water"
+    ],
     "spriteKey": "staryu",
     "evolvesTo": 121,
     "minLevel": 99,
-    "baseStats": { "hp": 30, "attack": 45, "defense": 55, "speed": 85 },
-    "recommendedNatures": ["Timid", "Modest"],
+    "baseStats": {
+      "hp": 30,
+      "attack": 45,
+      "defense": 55,
+      "spAttack": 70,
+      "spDefense": 55,
+      "speed": 85
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Modest"
+    ],
     "description": "An enigmatic Pokémon that can effortlessly regenerate any appendage it loses in battle."
   },
   {
     "id": 121,
     "name": "Starmie",
-    "types": ["Water", "Psychic"],
+    "types": [
+      "Water",
+      "Psychic"
+    ],
     "spriteKey": "starmie",
-    "baseStats": { "hp": 60, "attack": 75, "defense": 85, "speed": 115 },
-    "recommendedNatures": ["Timid", "Modest"],
+    "baseStats": {
+      "hp": 60,
+      "attack": 75,
+      "defense": 85,
+      "spAttack": 100,
+      "spDefense": 85,
+      "speed": 115
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Modest"
+    ],
     "description": "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem."
   },
   {
     "id": 122,
     "name": "Mr. Mime",
-    "types": ["Psychic", "Fairy"],
+    "types": [
+      "Psychic",
+      "Fairy"
+    ],
     "spriteKey": "mr-mime",
-    "baseStats": { "hp": 40, "attack": 45, "defense": 65, "speed": 90 },
-    "recommendedNatures": ["Timid", "Modest"],
+    "baseStats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 65,
+      "spAttack": 100,
+      "spDefense": 120,
+      "speed": 90
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Modest"
+    ],
     "description": "If interrupted while it is miming, it will slap around the offender with its broad hands."
   },
   {
     "id": 123,
     "name": "Scyther",
-    "types": ["Bug", "Flying"],
+    "types": [
+      "Bug",
+      "Flying"
+    ],
     "spriteKey": "scyther",
-    "baseStats": { "hp": 70, "attack": 110, "defense": 80, "speed": 105 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 70,
+      "attack": 110,
+      "defense": 80,
+      "spAttack": 55,
+      "spDefense": 80,
+      "speed": 105
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "With ninja-like agility and speed, it can create the illusion that there is more than one."
   },
   {
     "id": 124,
     "name": "Jynx",
-    "types": ["Ice", "Psychic"],
+    "types": [
+      "Ice",
+      "Psychic"
+    ],
     "spriteKey": "jynx",
-    "baseStats": { "hp": 65, "attack": 50, "defense": 35, "speed": 95 },
-    "recommendedNatures": ["Timid", "Modest"],
+    "baseStats": {
+      "hp": 65,
+      "attack": 50,
+      "defense": 35,
+      "spAttack": 115,
+      "spDefense": 95,
+      "speed": 95
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Modest"
+    ],
     "description": "It seductively wiggles its hips as it walks. It can cause people to dance in unison with it."
   },
   {
     "id": 125,
     "name": "Electabuzz",
-    "types": ["Electric"],
+    "types": [
+      "Electric"
+    ],
     "spriteKey": "electabuzz",
-    "baseStats": { "hp": 65, "attack": 83, "defense": 57, "speed": 105 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 65,
+      "attack": 83,
+      "defense": 57,
+      "spAttack": 95,
+      "spDefense": 85,
+      "speed": 105
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "Normally found near power plants, they can wander away and cause major blackouts in cities."
   },
   {
     "id": 126,
     "name": "Magmar",
-    "types": ["Fire"],
+    "types": [
+      "Fire"
+    ],
     "spriteKey": "magmar",
-    "baseStats": { "hp": 65, "attack": 95, "defense": 57, "speed": 93 },
-    "recommendedNatures": ["Modest", "Timid"],
+    "baseStats": {
+      "hp": 65,
+      "attack": 95,
+      "defense": 57,
+      "spAttack": 100,
+      "spDefense": 85,
+      "speed": 93
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Timid"
+    ],
     "description": "Its body always burns with an orange glow that enables it to hide perfectly among flames."
   },
   {
     "id": 127,
     "name": "Pinsir",
-    "types": ["Bug"],
+    "types": [
+      "Bug"
+    ],
     "spriteKey": "pinsir",
-    "baseStats": { "hp": 65, "attack": 125, "defense": 100, "speed": 85 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 65,
+      "attack": 125,
+      "defense": 100,
+      "spAttack": 55,
+      "spDefense": 70,
+      "speed": 85
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "If it fails to crush the victim in its pincers, it will swing it around and toss it hard."
   },
   {
     "id": 128,
     "name": "Tauros",
-    "types": ["Normal"],
+    "types": [
+      "Normal"
+    ],
     "spriteKey": "tauros",
-    "baseStats": { "hp": 75, "attack": 100, "defense": 95, "speed": 110 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 75,
+      "attack": 100,
+      "defense": 95,
+      "spAttack": 40,
+      "spDefense": 70,
+      "speed": 110
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "When it targets an enemy, it charges furiously while whipping its body with its long tails."
   },
   {
     "id": 129,
     "name": "Magikarp",
-    "types": ["Water"],
+    "types": [
+      "Water"
+    ],
     "spriteKey": "magikarp",
     "evolvesTo": 130,
     "minLevel": 20,
-    "baseStats": { "hp": 20, "attack": 10, "defense": 55, "speed": 80 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 20,
+      "attack": 10,
+      "defense": 55,
+      "spAttack": 15,
+      "spDefense": 20,
+      "speed": 80
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "In the distant past, it was somewhat stronger than the horribly weak descendants that exist today."
   },
   {
     "id": 130,
     "name": "Gyarados",
-    "types": ["Water", "Flying"],
+    "types": [
+      "Water",
+      "Flying"
+    ],
     "spriteKey": "gyarados",
-    "baseStats": { "hp": 95, "attack": 125, "defense": 79, "speed": 81 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 95,
+      "attack": 125,
+      "defense": 79,
+      "spAttack": 60,
+      "spDefense": 100,
+      "speed": 81
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage."
   },
   {
     "id": 131,
     "name": "Lapras",
-    "types": ["Water", "Ice"],
+    "types": [
+      "Water",
+      "Ice"
+    ],
     "spriteKey": "lapras",
-    "baseStats": { "hp": 130, "attack": 85, "defense": 80, "speed": 60 },
-    "recommendedNatures": ["Modest", "Bold"],
+    "baseStats": {
+      "hp": 130,
+      "attack": 85,
+      "defense": 80,
+      "spAttack": 85,
+      "spDefense": 95,
+      "speed": 60
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Bold"
+    ],
     "description": "A Pokémon that has been overhunted almost to extinction. It can ferry people across the water."
   },
   {
     "id": 132,
     "name": "Ditto",
-    "types": ["Normal"],
+    "types": [
+      "Normal"
+    ],
     "spriteKey": "ditto",
-    "baseStats": { "hp": 48, "attack": 48, "defense": 48, "speed": 48 },
-    "recommendedNatures": ["Relaxed", "Impish"],
+    "baseStats": {
+      "hp": 48,
+      "attack": 48,
+      "defense": 48,
+      "spAttack": 48,
+      "spDefense": 48,
+      "speed": 48
+    },
+    "recommendedNatures": [
+      "Relaxed",
+      "Impish"
+    ],
     "description": "Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy."
   },
   {
     "id": 133,
     "name": "Eevee",
-    "types": ["Normal"],
+    "types": [
+      "Normal"
+    ],
     "spriteKey": "eevee",
     "evolvesTo": 134,
     "minLevel": 99,
-    "baseStats": { "hp": 55, "attack": 55, "defense": 50, "speed": 55 },
-    "recommendedNatures": ["Jolly", "Adamant", "Modest"],
+    "baseStats": {
+      "hp": 55,
+      "attack": 55,
+      "defense": 50,
+      "spAttack": 45,
+      "spDefense": 65,
+      "speed": 55
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant",
+      "Modest"
+    ],
     "description": "Its genetic code is irregular. It may mutate if it is exposed to radiation from element stones."
   },
   {
     "id": 134,
     "name": "Vaporeon",
-    "types": ["Water"],
+    "types": [
+      "Water"
+    ],
     "spriteKey": "vaporeon",
-    "baseStats": { "hp": 130, "attack": 65, "defense": 60, "speed": 65 },
-    "recommendedNatures": ["Bold", "Modest"],
+    "baseStats": {
+      "hp": 130,
+      "attack": 65,
+      "defense": 60,
+      "spAttack": 110,
+      "spDefense": 95,
+      "speed": 65
+    },
+    "recommendedNatures": [
+      "Bold",
+      "Modest"
+    ],
     "description": "Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's."
   },
   {
     "id": 135,
     "name": "Jolteon",
-    "types": ["Electric"],
+    "types": [
+      "Electric"
+    ],
     "spriteKey": "jolteon",
-    "baseStats": { "hp": 65, "attack": 65, "defense": 60, "speed": 130 },
-    "recommendedNatures": ["Timid", "Modest"],
+    "baseStats": {
+      "hp": 65,
+      "attack": 65,
+      "defense": 60,
+      "spAttack": 110,
+      "spDefense": 95,
+      "speed": 130
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Modest"
+    ],
     "description": "It accumulates negative ions in the atmosphere to blast out 10000-volt lightning bolts."
   },
   {
     "id": 136,
     "name": "Flareon",
-    "types": ["Fire"],
+    "types": [
+      "Fire"
+    ],
     "spriteKey": "flareon",
-    "baseStats": { "hp": 65, "attack": 130, "defense": 60, "speed": 65 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 65,
+      "attack": 130,
+      "defense": 60,
+      "spAttack": 95,
+      "spDefense": 110,
+      "speed": 65
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "When storing thermal energy in its body, its temperature could soar to over 1600 degrees."
   },
   {
     "id": 137,
     "name": "Porygon",
-    "types": ["Normal"],
+    "types": [
+      "Normal"
+    ],
     "spriteKey": "porygon",
-    "baseStats": { "hp": 65, "attack": 60, "defense": 70, "speed": 40 },
-    "recommendedNatures": ["Modest", "Timid"],
+    "baseStats": {
+      "hp": 65,
+      "attack": 60,
+      "defense": 70,
+      "spAttack": 85,
+      "spDefense": 75,
+      "speed": 40
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Timid"
+    ],
     "description": "A Pokémon that consists entirely of programming code. Capable of moving freely in cyberspace."
   },
   {
     "id": 138,
     "name": "Omanyte",
-    "types": ["Rock", "Water"],
+    "types": [
+      "Rock",
+      "Water"
+    ],
     "spriteKey": "omanyte",
     "evolvesTo": 139,
     "minLevel": 40,
-    "baseStats": { "hp": 35, "attack": 40, "defense": 100, "speed": 35 },
-    "recommendedNatures": ["Modest", "Bold"],
+    "baseStats": {
+      "hp": 35,
+      "attack": 40,
+      "defense": 100,
+      "spAttack": 90,
+      "spDefense": 55,
+      "speed": 35
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Bold"
+    ],
     "description": "Although long extinct, in rare cases, it can be genetically resurrected from fossils."
   },
   {
     "id": 139,
     "name": "Omastar",
-    "types": ["Rock", "Water"],
+    "types": [
+      "Rock",
+      "Water"
+    ],
     "spriteKey": "omastar",
-    "baseStats": { "hp": 70, "attack": 60, "defense": 125, "speed": 55 },
-    "recommendedNatures": ["Modest", "Bold"],
+    "baseStats": {
+      "hp": 70,
+      "attack": 60,
+      "defense": 125,
+      "spAttack": 115,
+      "spDefense": 70,
+      "speed": 55
+    },
+    "recommendedNatures": [
+      "Modest",
+      "Bold"
+    ],
     "description": "A prehistoric Pokémon that died out when its heavy shell made it impossible to catch prey."
   },
   {
     "id": 140,
     "name": "Kabuto",
-    "types": ["Rock", "Water"],
+    "types": [
+      "Rock",
+      "Water"
+    ],
     "spriteKey": "kabuto",
     "evolvesTo": 141,
     "minLevel": 40,
-    "baseStats": { "hp": 30, "attack": 80, "defense": 90, "speed": 55 },
-    "recommendedNatures": ["Adamant", "Jolly"],
+    "baseStats": {
+      "hp": 30,
+      "attack": 80,
+      "defense": 90,
+      "spAttack": 55,
+      "spDefense": 45,
+      "speed": 55
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Jolly"
+    ],
     "description": "A Pokémon that was resurrected from a fossil found in what was once the ocean floor eons ago."
   },
   {
     "id": 141,
     "name": "Kabutops",
-    "types": ["Rock", "Water"],
+    "types": [
+      "Rock",
+      "Water"
+    ],
     "spriteKey": "kabutops",
-    "baseStats": { "hp": 60, "attack": 115, "defense": 105, "speed": 80 },
-    "recommendedNatures": ["Adamant", "Jolly"],
+    "baseStats": {
+      "hp": 60,
+      "attack": 115,
+      "defense": 105,
+      "spAttack": 65,
+      "spDefense": 70,
+      "speed": 80
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Jolly"
+    ],
     "description": "Its sleek shape is perfect for swimming. It slashes prey with its claws and drains the body fluids."
   },
   {
     "id": 142,
     "name": "Aerodactyl",
-    "types": ["Rock", "Flying"],
+    "types": [
+      "Rock",
+      "Flying"
+    ],
     "spriteKey": "aerodactyl",
-    "baseStats": { "hp": 80, "attack": 105, "defense": 65, "speed": 130 },
-    "recommendedNatures": ["Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 80,
+      "attack": 105,
+      "defense": 65,
+      "spAttack": 60,
+      "spDefense": 75,
+      "speed": 130
+    },
+    "recommendedNatures": [
+      "Jolly",
+      "Adamant"
+    ],
     "description": "A ferocious, prehistoric Pokémon that goes for the enemy's throat with its serrated saw-like fangs."
   },
   {
     "id": 143,
     "name": "Snorlax",
-    "types": ["Normal"],
+    "types": [
+      "Normal"
+    ],
     "spriteKey": "snorlax",
-    "baseStats": { "hp": 160, "attack": 110, "defense": 65, "speed": 30 },
-    "recommendedNatures": ["Adamant", "Careful"],
+    "baseStats": {
+      "hp": 160,
+      "attack": 110,
+      "defense": 65,
+      "spAttack": 65,
+      "spDefense": 110,
+      "speed": 30
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Careful"
+    ],
     "description": "Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful."
   },
   {
     "id": 144,
     "name": "Articuno",
-    "types": ["Ice", "Flying"],
+    "types": [
+      "Ice",
+      "Flying"
+    ],
     "spriteKey": "articuno",
-    "baseStats": { "hp": 90, "attack": 85, "defense": 100, "speed": 85 },
-    "recommendedNatures": ["Timid", "Modest"],
+    "baseStats": {
+      "hp": 90,
+      "attack": 85,
+      "defense": 100,
+      "spAttack": 95,
+      "spDefense": 125,
+      "speed": 85
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Modest"
+    ],
     "description": "A legendary bird Pokémon that is said to appear to doomed people who are lost in icy mountains."
   },
   {
     "id": 145,
     "name": "Zapdos",
-    "types": ["Electric", "Flying"],
+    "types": [
+      "Electric",
+      "Flying"
+    ],
     "spriteKey": "zapdos",
-    "baseStats": { "hp": 90, "attack": 90, "defense": 85, "speed": 100 },
-    "recommendedNatures": ["Timid", "Modest"],
+    "baseStats": {
+      "hp": 90,
+      "attack": 90,
+      "defense": 85,
+      "spAttack": 125,
+      "spDefense": 90,
+      "speed": 100
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Modest"
+    ],
     "description": "A legendary bird Pokémon that is said to appear from clouds while dropping enormous lightning bolts."
   },
   {
     "id": 146,
     "name": "Moltres",
-    "types": ["Fire", "Flying"],
+    "types": [
+      "Fire",
+      "Flying"
+    ],
     "spriteKey": "moltres",
-    "baseStats": { "hp": 90, "attack": 100, "defense": 90, "speed": 90 },
-    "recommendedNatures": ["Timid", "Modest"],
+    "baseStats": {
+      "hp": 90,
+      "attack": 100,
+      "defense": 90,
+      "spAttack": 125,
+      "spDefense": 85,
+      "speed": 90
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Modest"
+    ],
     "description": "Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames."
   },
   {
     "id": 147,
     "name": "Dratini",
-    "types": ["Dragon"],
+    "types": [
+      "Dragon"
+    ],
     "spriteKey": "dratini",
     "evolvesTo": 148,
     "minLevel": 30,
-    "baseStats": { "hp": 41, "attack": 64, "defense": 45, "speed": 50 },
-    "recommendedNatures": ["Adamant", "Jolly"],
+    "baseStats": {
+      "hp": 41,
+      "attack": 64,
+      "defense": 45,
+      "spAttack": 50,
+      "spDefense": 50,
+      "speed": 50
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Jolly"
+    ],
     "description": "Long considered a mythical Pokémon until recently when a small colony was found living underwater."
   },
   {
     "id": 148,
     "name": "Dragonair",
-    "types": ["Dragon"],
+    "types": [
+      "Dragon"
+    ],
     "spriteKey": "dragonair",
     "evolvesTo": 149,
     "minLevel": 55,
-    "baseStats": { "hp": 61, "attack": 84, "defense": 65, "speed": 70 },
-    "recommendedNatures": ["Adamant", "Jolly"],
+    "baseStats": {
+      "hp": 61,
+      "attack": 84,
+      "defense": 65,
+      "spAttack": 70,
+      "spDefense": 70,
+      "speed": 70
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Jolly"
+    ],
     "description": "A mystical Pokémon that exudes a gentle aura. Has the ability to change climate conditions."
   },
   {
     "id": 149,
     "name": "Dragonite",
-    "types": ["Dragon", "Flying"],
+    "types": [
+      "Dragon",
+      "Flying"
+    ],
     "spriteKey": "dragonite",
-    "baseStats": { "hp": 91, "attack": 134, "defense": 95, "speed": 80 },
-    "recommendedNatures": ["Adamant", "Jolly"],
+    "baseStats": {
+      "hp": 91,
+      "attack": 134,
+      "defense": 95,
+      "spAttack": 100,
+      "spDefense": 100,
+      "speed": 80
+    },
+    "recommendedNatures": [
+      "Adamant",
+      "Jolly"
+    ],
     "description": "An extremely rarely seen marine Pokémon. Its intelligence is said to match that of humans."
   },
   {
     "id": 150,
     "name": "Mewtwo",
-    "types": ["Psychic"],
+    "types": [
+      "Psychic"
+    ],
     "spriteKey": "mewtwo",
-    "baseStats": { "hp": 106, "attack": 110, "defense": 90, "speed": 130 },
-    "recommendedNatures": ["Timid", "Jolly"],
+    "baseStats": {
+      "hp": 106,
+      "attack": 110,
+      "defense": 90,
+      "spAttack": 154,
+      "spDefense": 90,
+      "speed": 130
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Jolly"
+    ],
     "description": "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments."
   },
   {
     "id": 151,
     "name": "Mew",
-    "types": ["Psychic"],
+    "types": [
+      "Psychic"
+    ],
     "spriteKey": "mew",
-    "baseStats": { "hp": 100, "attack": 100, "defense": 100, "speed": 100 },
-    "recommendedNatures": ["Timid", "Jolly", "Adamant"],
+    "baseStats": {
+      "hp": 100,
+      "attack": 100,
+      "defense": 100,
+      "spAttack": 100,
+      "spDefense": 100,
+      "speed": 100
+    },
+    "recommendedNatures": [
+      "Timid",
+      "Jolly",
+      "Adamant"
+    ],
     "description": "So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide."
   }
 ]
