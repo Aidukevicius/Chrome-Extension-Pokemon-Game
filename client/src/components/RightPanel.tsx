@@ -26,7 +26,7 @@ export default function RightPanel({
   const typeColor = TYPE_COLORS[primaryType] || TYPE_COLORS.Normal;
 
   return (
-    <div className="space-y-3">
+    <div className="flex flex-col gap-3 h-full">
       {/* 3-Dot Selector */}
       <div
         className="flex flex-col gap-2 rounded border-2 p-2"
@@ -90,9 +90,8 @@ export default function RightPanel({
 
       {/* Panel Content */}
       <div
-        className="rounded border-2 p-3 text-xs space-y-2"
+        className="rounded border-2 p-3 text-xs space-y-2 flex-1 overflow-auto"
         style={{
-          height: "155px",
           background: `linear-gradient(135deg, ${typeColor.from}15 0%, ${typeColor.to}15 100%)`,
           borderColor: typeColor.from
         }}

@@ -25,7 +25,7 @@ export default function CompanionArea({
   };
 
   return (
-    <div className="space-y-3">
+    <div className="flex flex-col gap-3 h-full">
       {/* Companion Display with Type Gradient */}
       <div
         className="relative rounded-md border-2 p-6 flex flex-col items-center justify-center"
@@ -106,14 +106,16 @@ export default function CompanionArea({
 
       {/* Mood Indicator */}
       <div
-        className="text-center rounded border-2 py-1 px-2"
+        className="text-center rounded border-2 py-1 px-2 flex-1 flex items-center justify-center"
         style={{
           background: `linear-gradient(135deg, ${typeColor.from}15 0%, ${typeColor.to}15 100%)`,
           borderColor: typeColor.from
         }}
       >
-        <span className="text-[9px] font-semibold text-muted-foreground">Mood: </span>
-        <span className="text-[9px] font-bold" data-testid="text-mood">{companion.mood}</span>
+        <div>
+          <span className="text-[9px] font-semibold text-muted-foreground">Mood: </span>
+          <span className="text-[9px] font-bold" data-testid="text-mood">{companion.mood}</span>
+        </div>
       </div>
     </div>
   );
