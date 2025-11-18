@@ -61,39 +61,38 @@ export default function CompanionArea({
 
       {/* Level Tracker */}
       <div
-        className="rounded border-2 p-1.5"
+        className="rounded border p-1"
         style={{
           background: `linear-gradient(135deg, ${typeColor.from}15 0%, ${typeColor.to}15 100%)`,
           borderColor: typeColor.from
         }}
       >
-        <div className="flex items-center justify-between mb-0.5">
-          <span className="text-muted-foreground text-[8px]">Level</span>
-          <span className="text-[10px] font-bold" data-testid="text-companion-level">Lv. {companion.level}</span>
+        <div className="flex items-center justify-between gap-1">
+          <span className="text-muted-foreground text-[7px]">Lv</span>
+          <span className="text-[8px] font-bold" data-testid="text-companion-level">{companion.level}</span>
         </div>
-        <div className="h-1.5 bg-secondary rounded-full overflow-hidden">
+        <div className="h-1 bg-secondary rounded-full overflow-hidden mt-0.5">
           <div
             className="h-full bg-chart-3 transition-all"
             style={{ width: `${(companion.xp / companion.xpToNextLevel) * 100}%` }}
             data-testid="xp-bar"
           />
         </div>
-        <div className="text-[7px] text-right mt-0.5">{companion.xp}/{companion.xpToNextLevel} XP</div>
       </div>
 
       {/* Happiness Tracker */}
       <div
-        className="rounded border-2 p-1.5"
+        className="rounded border p-1"
         style={{
           background: `linear-gradient(135deg, ${typeColor.from}15 0%, ${typeColor.to}15 100%)`,
           borderColor: typeColor.from
         }}
       >
-        <div className="flex items-center justify-between mb-0.5">
-          <span className="text-muted-foreground text-[8px]">Happiness</span>
-          <span className="text-[8px]">{companion.friendship}/100</span>
+        <div className="flex items-center justify-between gap-1">
+          <span className="text-muted-foreground text-[7px]">Happy</span>
+          <span className="text-[7px]">{companion.friendship}</span>
         </div>
-        <div className="h-1.5 bg-secondary rounded-full overflow-hidden">
+        <div className="h-1 bg-secondary rounded-full overflow-hidden mt-0.5">
           <div
             className="h-full bg-primary transition-all"
             style={{ width: `${companion.friendship}%` }}
