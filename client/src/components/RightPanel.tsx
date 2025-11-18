@@ -2,6 +2,9 @@ import type { CompanionState, Pokemon } from "@shared/schema";
 import { TYPE_COLORS } from "@shared/schema";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
+import expShareIcon from "pokesprite-images/items/key-item/exp-share.png";
+import fireStoneIcon from "pokesprite-images/items/evo-item/fire-stone.png";
+import pokedexIcon from "pokesprite-images/items/key-item/adventure-guide.png";
 import pokemonData from "../data/pokemon-gen1.json";
 
 interface RightPanelProps {
@@ -47,11 +50,7 @@ export default function RightPanel({
             data-testid="button-panel-stats"
             aria-label="Stats panel"
           />
-          <img 
-            src="https://raw.githubusercontent.com/msikma/pokesprite/master/items/key/pokedex.png"
-            alt="Stats"
-            className="w-5 h-5 pixelated"
-          />
+          <img src={expShareIcon} alt="Stats" className="w-5 h-5 pixelated" />
         </div>
         <div className="flex items-center gap-2">
           <button
@@ -68,11 +67,7 @@ export default function RightPanel({
             data-testid="button-panel-evolutions"
             aria-label="Evolutions panel"
           />
-          <img 
-            src="https://raw.githubusercontent.com/msikma/pokesprite/master/items/evolution/fire-stone.png"
-            alt="Evolution"
-            className="w-5 h-5 pixelated"
-          />
+          <img src={fireStoneIcon} alt="Evolution" className="w-5 h-5 pixelated" />
         </div>
         <div className="flex items-center gap-2">
           <button
@@ -89,11 +84,7 @@ export default function RightPanel({
             data-testid="button-panel-about"
             aria-label="About panel"
           />
-          <img 
-            src="https://raw.githubusercontent.com/msikma/pokesprite/master/items/key/town-map.png"
-            alt="About"
-            className="w-5 h-5 pixelated"
-          />
+          <img src={pokedexIcon} alt="About" className="w-5 h-5 pixelated" />
         </div>
       </div>
 

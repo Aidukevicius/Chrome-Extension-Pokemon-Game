@@ -1,13 +1,25 @@
 import { DEFAULT_ITEMS } from "@shared/schema";
 import { Badge } from "../ui/badge";
+import oranBerryIcon from "pokesprite-images/items/berry/oran.png";
+import potionIcon from "pokesprite-images/items/medicine/potion.png";
 
 interface ItemsTabProps {
   inventory: Record<string, number>;
 }
 
 const ITEM_ICONS: Record<string, string> = {
-  berry: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/oran-berry.png",
-  potion: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/potion.png"
+  berry: oranBerryIcon,
+  potion: potionIcon
+};
+
+const ItemIcon = ({ itemId }: { itemId: string }) => {
+  return (
+    <img 
+      src={ITEM_ICONS[itemId]} 
+      alt={itemId}
+      className="w-8 h-8 pixelated"
+    />
+  );
 };
 
 export default function ItemsTab({ inventory }: ItemsTabProps) {
@@ -30,13 +42,7 @@ export default function ItemsTab({ inventory }: ItemsTabProps) {
                 className="flex items-center gap-3 p-3 bg-card rounded border border-border"
                 data-testid={`item-${item.id}`}
               >
-                {ITEM_ICONS[item.id] && (
-                  <img 
-                    src={ITEM_ICONS[item.id]} 
-                    alt={item.name}
-                    className="w-8 h-8 pixelated"
-                  />
-                )}
+                <ItemIcon itemId={item.id} />
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-1">
                     <h3 className="font-semibold text-sm">{item.name}</h3>

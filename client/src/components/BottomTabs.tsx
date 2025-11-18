@@ -1,5 +1,10 @@
 import type { Pokemon } from "@shared/schema";
 import { TYPE_COLORS } from "@shared/schema";
+import pokeBallIcon from "pokesprite-images/items/ball/poke.png";
+import pokedexIcon from "pokesprite-images/items/key-item/adventure-guide.png";
+import bagIcon from "pokesprite-images/items/key-item/forage-bag.png";
+import coinIcon from "pokesprite-images/items/key-item/coin-case.png";
+import townMapIcon from "pokesprite-images/items/key-item/town-map.png";
 
 interface BottomTabsProps {
   activeTab: "team" | "pokedex" | "items" | "trade" | "settings";
@@ -7,15 +12,33 @@ interface BottomTabsProps {
   companionPokemon: Pokemon;
 }
 
+const TAB_ICONS: Record<string, string> = {
+  team: pokeBallIcon,
+  pokedex: pokedexIcon,
+  items: bagIcon,
+  trade: coinIcon,
+  settings: townMapIcon
+};
+
+const TabIcon = ({ id }: { id: string }) => {
+  return (
+    <img 
+      src={TAB_ICONS[id]} 
+      alt={id}
+      className="w-5 h-5 pixelated"
+    />
+  );
+};
+
 export default function BottomTabs({ activeTab, setActiveTab, companionPokemon }: BottomTabsProps) {
   const primaryType = companionPokemon?.types?.[0] || "Normal";
   const typeColor = TYPE_COLORS[primaryType] || TYPE_COLORS.Normal;
   const tabs = [
-    { id: "team" as const, icon: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png", label: "My Team" },
-    { id: "pokedex" as const, icon: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/pokedex.png", label: "Pokédex" },
-    { id: "items" as const, icon: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/bag.png", label: "Items" },
-    { id: "trade" as const, icon: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/coin.png", label: "Shop" },
-    { id: "settings" as const, icon: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/town-map.png", label: "Settings" }
+    { id: "team" as const, label: "My Team" },
+    { id: "pokedex" as const, label: "Pokédex" },
+    { id: "items" as const, label: "Items" },
+    { id: "trade" as const, label: "Shop" },
+    { id: "settings" as const, label: "Settings" }
   ];
 
   return (
@@ -34,11 +57,7 @@ export default function BottomTabs({ activeTab, setActiveTab, companionPokemon }
           } : {}}
           data-testid={`tab-${tab.id}`}
         >
-          <img
-            src={tab.icon}
-            alt={tab.label}
-            className="w-5 h-5 pixelated"
-          />
+          <TabIcon id={tab.id} />
           <span className="text-[10px] font-pixel">{tab.label}</span>
         </button>
       ))}
