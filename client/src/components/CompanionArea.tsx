@@ -63,17 +63,17 @@ export default function CompanionArea({
       <div className="flex gap-1">
         {/* Level Tracker */}
         <div
-          className="flex-1 rounded border px-1 py-0.5"
+          className="flex-1 rounded border-2 px-2 py-1.5"
           style={{
             background: `linear-gradient(135deg, ${typeColor.from}15 0%, ${typeColor.to}15 100%)`,
             borderColor: typeColor.from
           }}
         >
-          <div className="flex items-center justify-between">
-            <span className="text-muted-foreground text-[6px]">Lv</span>
-            <span className="text-[7px] font-bold" data-testid="text-companion-level">{companion.level}</span>
+          <div className="flex items-center justify-between mb-1">
+            <span className="text-muted-foreground text-[8px]">Lv</span>
+            <span className="text-[9px] font-bold" data-testid="text-companion-level">{companion.level}</span>
           </div>
-          <div className="h-0.5 bg-secondary rounded-full overflow-hidden mt-0.5">
+          <div className="h-1 bg-secondary rounded-full overflow-hidden">
             <div
               className="h-full bg-chart-3 transition-all"
               style={{ width: `${(companion.xp / companion.xpToNextLevel) * 100}%` }}
@@ -84,17 +84,17 @@ export default function CompanionArea({
 
         {/* Happiness Tracker */}
         <div
-          className="flex-1 rounded border px-1 py-0.5"
+          className="flex-1 rounded border-2 px-2 py-1.5"
           style={{
             background: `linear-gradient(135deg, ${typeColor.from}15 0%, ${typeColor.to}15 100%)`,
             borderColor: typeColor.from
           }}
         >
-          <div className="flex items-center justify-between">
-            <span className="text-muted-foreground text-[6px]">Happy</span>
-            <span className="text-[7px]">{companion.friendship}</span>
+          <div className="flex items-center justify-between mb-1">
+            <span className="text-muted-foreground text-[8px]">Happy</span>
+            <span className="text-[9px]">{companion.friendship}</span>
           </div>
-          <div className="h-0.5 bg-secondary rounded-full overflow-hidden mt-0.5">
+          <div className="h-1 bg-secondary rounded-full overflow-hidden">
             <div
               className="h-full bg-primary transition-all"
               style={{ width: `${companion.friendship}%` }}
@@ -106,14 +106,14 @@ export default function CompanionArea({
 
       {/* Mood Indicator */}
       <div
-        className="text-center rounded border-2 p-2"
+        className="text-center rounded border-2 py-1 px-2"
         style={{
           background: `linear-gradient(135deg, ${typeColor.from}15 0%, ${typeColor.to}15 100%)`,
           borderColor: typeColor.from
         }}
       >
-        <span className="text-xs font-semibold text-muted-foreground">Mood: </span>
-        <span className="text-xs font-bold" data-testid="text-mood">{companion.mood}</span>
+        <span className="text-[9px] font-semibold text-muted-foreground">Mood: </span>
+        <span className="text-[9px] font-bold" data-testid="text-mood">{companion.mood}</span>
       </div>
     </div>
   );
